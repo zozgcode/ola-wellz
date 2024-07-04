@@ -39,21 +39,15 @@ export default function PayBills() {
   ];
 
   return (
-    <div className="border w-full h-screen bg-[#FAFAF8]">
-      <div className="bg-white sticky top-0 z-10 p-3 py-5 flex items-center justify-between gap-1">
-        <Link href="/dashboard" className="flex items-center gap-2">
-          <IoIosArrowBack />
-          <span className="text-[#252525] font-semibold">Bill Payment</span>
-        </Link>
-      </div>
+    <div className="w-full h-screen bg-[#FAFAF8]">
         {loading && <p className="text-[#811c1c] text-center text-sm p-4 pt-4 pb-0">Please wait...</p>}
         {!loading && showMsg && (
           <p className="text-[#811c1c] text-center text-sm p-4 pt-4 pb-0">Service is down, Please try again later...</p>
         )}
       <div className="p-4">
-        <div className="bg-white rounded-lg p-4 mb-4">
+        <div className="bg-white rounded-lg p-4 px-0 mb-4">
           {billsData.map((item, i) => (
-            <div key={i} className="flex w-full justify-between items-center py-3" onClick={toggleShowMsg} >
+            <div key={i} className="flex px-4 border-b border-x-0 border-white hover:bg-red-500/10 w-full justify-between items-center py-3" onClick={toggleShowMsg} >
               <div className="flex items-center gap-3">
                 <div className="rounded-lg flex items-center justify-center w-[35px] h-[35px] bg-[#d71e28]/10">
                   {item.icon}

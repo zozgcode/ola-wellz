@@ -30,7 +30,7 @@ export default function Header({ handleLogout, user }: any) {
         />
       </div>
       {open && (
-        <div className="border w-full h-screen fixed z-50 left-0 top-0 right-0 bg-[#FAFAF8]">
+        <div className="w-full h-screen fixed z-50 left-0 top-0 right-0 bg-[#FAFAF8]">
           <div className="bg-white sticky top-0 z-10 p-3 py-5 flex items-center justify-between gap-1">
             <div className="flex items-center gap-2">
               <IoIosArrowBack onClick={closeNav} />

@@ -1,22 +1,22 @@
-import { FaWallet, FaMoneyBillTransfer } from "react-icons/fa6";
-import { BsPencilSquare } from "react-icons/bs";
+import { FaWallet, FaMoneyBillTransfer, FaMoneyBills } from "react-icons/fa6";
+import { MdOutlineEventNote } from "react-icons/md";
 import { AiOutlineRise } from "react-icons/ai";
 
 export const fMenuLink = [
     {
-      label: "Accounts",
+      label: "Home",
       icon: <FaWallet />,
       slug: "/dashboard",
     },
     {
-      label: "Pay & Transfer",
+      label: "Transfer",
       icon: <FaMoneyBillTransfer />,
       slug: "/dashboard/transfer",
     },
     {
-      label: "Plan & Track",
-      icon: <BsPencilSquare />,
-      slug: "",
+      label: "Pay Bills",
+      icon: <MdOutlineEventNote />,
+      slug: "/dashboard/bill-payment",
     },
     {
       label: "Investment",
