@@ -19,8 +19,7 @@ export default function Header({ handleLogout, user }: any) {
 
   return (
     <div className="w-full min-h-[30px] relative flex items-center justify-between bg-[#d71e28] border-b-4 border-[#ffcd41] p-[16px] py-[15px]">
-      <div className="flex items-center gap-3">
-        <UimBars onClick={openNav} />
+      <div className="flex items-center justify-between gap-3 w-full">
         <Image
           src="https://i.imgur.com/HCpm00D.png"
           width={200}
@@ -28,6 +27,7 @@ export default function Header({ handleLogout, user }: any) {
           className="w-[130px] h-[13px]"
           alt="logo"
         />
+        <UimBars onClick={openNav} />
       </div>
       {open && (
         <div className="w-full h-screen fixed z-50 left-0 top-0 right-0 bg-[#FAFAF8]">

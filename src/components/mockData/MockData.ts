@@ -146,7 +146,7 @@ export const mockAccounts: Account[] = [
         account_no: "****1403",
       }, 
       {
-        transaction_id: "TXN005",
+        transaction_id: "TXN006",
         dateTime: "April 23 2020, 8:15:02 pm",
         description: "Project Milestone Payment",
         status: "Success",
@@ -154,7 +154,7 @@ export const mockAccounts: Account[] = [
         account_no: "****1403",
       },
       {
-        transaction_id: "344734",
+        transaction_id: "TXN007",
         dateTime: "March 15, 2019, 7:20:15 am",
         description: "Project Completion Bonus",
         status: "Success",
@@ -162,7 +162,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5012",
       },
       {
-        transaction_id: "343r4",
+        transaction_id: "TXN008",
         dateTime: "February 12, 2019, 10:45:00 am",
         description: "Walmart",
         status: "Success",
@@ -170,7 +170,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5013",
       },
       {
-        transaction_id: "TXN0232",
+        transaction_id: "TXN009",
         dateTime: "April 16, 2019, 2:45:15 pm",
         description: "AT&T",
         status: "Success",
@@ -178,7 +178,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5007",
       },
       {
-        transaction_id: "TXN005",
+        transaction_id: "TXN010",
         dateTime: "April 23 2020, 8:15:02 pm",
         description: "Project Milestone Payment",
         status: "Success",
@@ -186,7 +186,7 @@ export const mockAccounts: Account[] = [
         account_no: "****1403",
       },
       {
-        transaction_id: "344734",
+        transaction_id: "TXN011",
         dateTime: "March 15, 2019, 7:20:15 am",
         description: "Project Completion Bonus",
         status: "Success",
@@ -194,7 +194,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5012",
       },
       {
-        transaction_id: "343r4",
+        transaction_id: "TXN012",
         dateTime: "February 12, 2019, 10:45:00 am",
         description: "Walmart",
         status: "Success",
@@ -202,7 +202,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5013",
       },
       {
-        transaction_id: "TXN0232",
+        transaction_id: "TXN013",
         dateTime: "April 16, 2019, 2:45:15 pm",
         description: "AT&T",
         status: "Success",
@@ -210,7 +210,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5007",
       },
       {
-        transaction_id: "TXN005",
+        transaction_id: "TXN014",
         dateTime: "April 23 2020, 8:15:02 pm",
         description: "Project Milestone Payment",
         status: "Success",
@@ -218,7 +218,7 @@ export const mockAccounts: Account[] = [
         account_no: "****1403",
       },
       {
-        transaction_id: "344734",
+        transaction_id: "TXN015",
         dateTime: "March 15, 2019, 7:20:15 am",
         description: "Project Completion Bonus",
         status: "Success",
@@ -226,7 +226,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5012",
       },
       {
-        transaction_id: "343r4",
+        transaction_id: "TXN016",
         dateTime: "February 12, 2019, 10:45:00 am",
         description: "Walmart",
         status: "Success",
@@ -234,7 +234,7 @@ export const mockAccounts: Account[] = [
         account_no: "****5013",
       },
       {
-        transaction_id: "TXN0232",
+        transaction_id: "TXN017",
         dateTime: "April 16, 2019, 2:45:15 pm",
         description: "AT&T",
         status: "Success",
