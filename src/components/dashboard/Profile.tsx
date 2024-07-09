@@ -47,18 +47,6 @@ export default function Profile() {
             </span>
             </div>
             <div className="flex w-full justify-between items-center">
-            <span className="text-[#3f3f3f] font-normal ">
-                Mobile Number
-            </span>
-            <span className="text-[#252525] font-medium truncate max-w-[200px] sm:max-w-full">
-            {user.holder.mobileNumber}
-            </span>
-            </div>
-            <div className="flex w-full justify-between items-center">
-            <span className="text-[#3f3f3f] font-normal">Nick Name</span>
-            <span className="text-[#252525] font-medium truncate max-w-[200px] sm:max-w-full">{user.holder.nickName}</span>
-            </div>
-            <div className="flex w-full justify-between items-center">
             <span className="text-[#3f3f3f] font-normal">Gender</span>
             <span className="text-[#252525] font-medium">{user.holder.gender}</span>
             </div>
