@@ -1,6 +1,6 @@
-import { FaWallet, FaMoneyBillTransfer, FaMoneyBills } from "react-icons/fa6";
+import { FaWallet, FaMoneyBillTransfer } from "react-icons/fa6";
 import { MdOutlineEventNote } from "react-icons/md";
-import { AiOutlineRise } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
 
 export const fMenuLink = [
     {
@@ -19,8 +19,8 @@ export const fMenuLink = [
       slug: "/dashboard/bill-payment",
     },
     {
-      label: "Investment",
-      icon: <AiOutlineRise />,
-      slug: "",
+      label: "Me",
+      icon: <CgProfile />,
+      slug: "/dashboard/profile",
     },
   ];

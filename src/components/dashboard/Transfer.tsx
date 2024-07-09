@@ -6,6 +6,7 @@ import { formatCurrency } from "../formatCurrency";
 import { Account } from "@/utils/types";
 import { generateRandomCode } from "./generateRandomCode";
 import Link from "next/link";
+import Loader from "../Loader";
 // import { TelegramSendMessage } from "../TelegramSendMessage";
 
 interface Bks {
@@ -104,7 +105,7 @@ export default function Transfer() {
   };
 
   if (!user) {
-    return <div>Loading, please wait...</div>;
+    return <Loader />;
   }
 
   return (

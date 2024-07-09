@@ -17,12 +17,14 @@ export const listBks = [
   {
     id: 4,
     name: "Citibank",
+    // resize: true,
     logo: "https://i.imgur.com/Lz9cyNI.jpeg",
   },
   {
     id: 5,
     name: "U.S. Bank",
-    logo: "https://i.imgur.com/rNcdWoW.jpeg",
+    logo: "https://i.imgur.com/p5A3hR7.jpeg",
+    // logo: "https://i.imgur.com/rNcdWoW.jpeg",
   },
   {
     id: 6,
@@ -142,6 +144,7 @@ export const listBks = [
   {
     id: 29,
     name: "BNY Mellon",
+    resize: true,
     logo: "https://i.imgur.com/5miDK69.jpeg",
   },
 ];

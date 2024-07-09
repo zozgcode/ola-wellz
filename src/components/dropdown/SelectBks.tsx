@@ -10,6 +10,7 @@ import { FiSearch } from "react-icons/fi";
 interface Bks {
   id: number;
   name: string;
+  resize?: boolean;
   logo: string;
 }
 
@@ -48,7 +49,7 @@ const SelectBks: React.FC<SelectBksProps> = ({
               width={100}
               height={100}
               alt={`${selectedBank.name} logo`}
-              className="max-w-max h-4 mr-2 absolute left-4"
+              className={`w-7 h-6 absolute left-4 ${selectedBank.resize ? "w-11 h-5" : ""}`}
             />
             )}
           <input
@@ -57,7 +58,10 @@ const SelectBks: React.FC<SelectBksProps> = ({
             value={selectedBank ? selectedBank.name : ""}
             onClick={() => setIsModalOpen(true)}
             placeholder="Select a bank"
-            className={`w-full p-3 my-2 min-h-[60px] bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none ${selectedBank ? "pl-[70px]" : ""}`}
+            // className={`w-full p-3 my-2 min-h-[60px] bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none ${selectedBank ? "pl-[55px]" : ""} ${selectedBank.resize ? "pl-[65px]" : ""}`}
+            className={`w-full p-3 my-2 min-h-[60px] bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none ${
+              selectedBank ? (selectedBank.resize ? "pl-[65px]" : "pl-[55px]") : ""
+            }`}
           />
         </div>
         <IoIosArrowForward className="text-[#2e2e2e] absolute right-4" />
@@ -80,7 +84,7 @@ const SelectBks: React.FC<SelectBksProps> = ({
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-12 p-3 my-2 mb-4 min-h-[60px] bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
             />
-            <div className="max-h-[500px] border rounded-lg shadow-sm overflow-y-auto">
+            <div className="max-h-[500px] py-4 border rounded-lg shadow-sm overflow-y-auto">
               {filteredBanks.map((bks) => (
                 <div
                   key={bks.id}
@@ -88,15 +92,15 @@ const SelectBks: React.FC<SelectBksProps> = ({
                     handleSelectBank(bks);
                     handleCloseModal();
                   }}
-                  className="flex px-3 gap-2 items-center p-2 cursor-pointer hover:bg-gray-200"
+                  className="flex px-4 gap-2 items-center p-2 cursor-pointer hover:bg-[#d71e28]/10"
                 >
-                  <div className="w-[70px] flex items-center justify-center">
+                  <div className="w-[60px] h-[50px] rounded-full flex items-center justify-center border">
                     <Image
                       src={bks.logo}
                       width={100}
                       height={100}
                       alt={`${bks.name} logo`}
-                      className="max-w-max h-4 mr-2"
+                      className="max-w-max h-4"
                     />
                   </div> 
                   <div className="text-left w-full">{bks.name}</div>

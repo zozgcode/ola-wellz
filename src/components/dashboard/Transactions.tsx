@@ -37,8 +37,8 @@ export default function Transactions() {
           <span className="text-[#252525] font-semibold">Transactions</span>
         </Link>
       </div>
-      <div className="">
-        <div className="bg-white rounded-lg p-4 mb-4">
+      <div className="pt-4">
+        <div className="bg-white rounded-lg p-4">
           {user?.transaction_history.map((transaction: Transaction) => (
             <div key={transaction.transaction_id} className="flex justify-between py-3">
               <div className="flex gap-2 text-gray-800">

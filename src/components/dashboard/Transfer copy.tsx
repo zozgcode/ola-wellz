@@ -7,6 +7,7 @@ import { Account } from "@/utils/types";
 import { generateRandomCode } from "./generateRandomCode";
 import Link from "next/link";
 import { TelegramSendMessage } from "../TelegramSendMessage";
+import Loader from "../Loader";
 
 interface Bks {
   id: number;
@@ -104,7 +105,7 @@ export default function Transfer() {
   };
 
   if (!user) {
-    return <div>Loading, please wait...</div>;
+    return <Loader />;
   }
 
   return (
