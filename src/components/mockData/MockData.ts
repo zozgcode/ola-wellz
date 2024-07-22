@@ -347,7 +347,7 @@ export const mockAccounts: Account[] = [
     transaction_history: [
       {
         transaction_id: "TXN001",
-        dateTime: "July 29 2024, 2:03:08 am",
+        dateTime: "July 22 2024, 2:03:08 am",
         description: "Transfer to Ashley Gardner",
         status: "Success",
         amount_usd: -20000.0,
