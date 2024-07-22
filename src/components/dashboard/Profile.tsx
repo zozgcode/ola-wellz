@@ -47,10 +47,6 @@ export default function Profile() {
             </span>
             </div>
             <div className="flex w-full justify-between items-center">
-            <span className="text-[#3f3f3f] font-normal">Gender</span>
-            <span className="text-[#252525] font-medium">{user.holder.gender}</span>
-            </div>
-            <div className="flex w-full justify-between items-center">
             <span className="text-[#3f3f3f] font-normal">Email</span>
             <span className="text-[#252525] font-medium flex items-center gap-1">
                 <span className="bg-[#d71e28]/30 text-black text-xs p-2 py-1 rounded-lg flex items-center gap-1">

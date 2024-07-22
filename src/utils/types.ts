@@ -6,7 +6,7 @@ export interface Account {
     lastName?: string;
     mobileNumber?: string;
     nickName?: string;
-    gender: string;
+    gender?: string;
     email?: string;
     jointNames: string;
     username: string;
