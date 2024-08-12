@@ -25,7 +25,7 @@ const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user, hideBalan
       <div className="w-full">
         <div className="text-[14px] w-full font-[500] flex items-center justify-between">
           <span>Recent Transactions</span>
-          <Link href="/dashboard/transactions" className="text-[13px] font-[500] underline underline-offset-4 text-[#d71e28]">See More</Link>
+          <Link href="/dashboard/transactions" className="text-[13px] font-[500] text-[#d71e28]">See More</Link>
         </div>
         <div className="mt-[10px]">
           {transactionsToShow.map((transaction: Transaction) => (
