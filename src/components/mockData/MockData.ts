@@ -841,4 +841,67 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC006",
+    holder: {
+      firstName: "Roland",
+      lastName: "Nashoba",
+      email: "rolandnashoba@gmail.com",
+      jointNames: "",
+      username: "rolandnashoba",
+      password: "Nashoba090@",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 900000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, Please enter the code sent to you",
+      transaction_code: "",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        transaction_id: "TXN001",
+        dateTime: "May 10 2020, 3:32:32 am",
+        description: "Grimms supply holding's",
+        status: "Success",
+        amount_usd: 17900.0,
+        account_no: "****5009",
+      },
+      {
+        transaction_id: "TXN002",
+        dateTime: "January 15 2020, 1:04:02 pm",
+        description: "Transfer from TABITHA MARTEL",
+        status: "Success",
+        amount_usd: 100.0,
+        account_no: "****2930",
+      },
+      {
+        transaction_id: "TXN003",
+        dateTime: "February 8 2018, 10:11:22 am",
+        description: "Transfer from NICHOLAS DUKE",
+        status: "Success",
+        amount_usd: 2100.0,
+        account_no: "****3839",
+      },
+      {
+        transaction_id: "TXN004",
+        dateTime: "July 2 2017, 7:08:32 am",
+        description: "Transfer from BRANDON PERKINS",
+        status: "Success",
+        amount_usd: 15000.0,
+        account_no: "****3249",
+      },
+      {
+        transaction_id: "TXN005",
+        dateTime: "May 23 2017, 1:15:02 pm",
+        description: "Transfer from BT Group",
+        status: "Success",
+        amount_usd: 49000.0,
+        account_no: "****1403",
+      },
+    ],
+  },
 ];
