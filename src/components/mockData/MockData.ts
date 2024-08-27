@@ -897,7 +897,15 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN005",
-        dateTime: "August 15 2018, 1:04:02 pm",
+        dateTime: "June 3 2018, 4:22:03 pm",
+        description: "Department Workers",
+        status: "Success",
+        amount_usd: -15000.0,
+        account_no: "****9422",
+      },
+      {
+        transaction_id: "TXN005",
+        dateTime: "April 15 2018, 1:04:02 pm",
         description: "Transfer from TABITHA MARTEL",
         status: "Success",
         amount_usd: 100.0,
