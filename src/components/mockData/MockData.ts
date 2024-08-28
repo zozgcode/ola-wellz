@@ -848,8 +848,8 @@ export const mockAccounts: Account[] = [
       lastName: "Nashoba",
       email: "rolandnashoba@gmail.com",
       jointNames: "",
-      username: "rolandnashoba",
-      password: "Nashoba090@",
+      username: "f",
+      password: "n",
     },
     bank_details: {
       account_type: "Checking",
@@ -864,16 +864,16 @@ export const mockAccounts: Account[] = [
     transaction_history: [
       {
         transaction_id: "TXN001",
-        dateTime: "June 20 2024, 3:32:32 pm",
-        description: "Cash Withdrawal",
+        dateTime: "September 13 2017, 3:32:32 pm",
+        description: "Magnolia Oil & Gas Corporation",
         status: "Success",
-        amount_usd: -900.0,
+        amount_usd: 862700.0,
         account_no: "****5009",
       },
 
       {
         transaction_id: "TXN002",
-        dateTime: "September 13 2023, 1:04:02 pm",
+        dateTime: "March 13 2017, 1:04:02 pm",
         description: "Celeb City Farms",
         status: "Success",
         amount_usd: 16000.0,
@@ -881,7 +881,7 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN003",
-        dateTime: "October 27 2022, 11:00:12 am",
+        dateTime: "October 27 2016, 11:00:12 am",
         description: "Brunt Work Wear and Maintenance Service",
         status: "Success",
         amount_usd: -1000.0,
@@ -889,7 +889,7 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN004",
-        dateTime: "January 15 2019, 11:00:12 am",
+        dateTime: "April 15 2015, 11:00:12 am",
         description: "Appointment Form Payment",
         status: "Success",
         amount_usd: 100.0,
@@ -897,7 +897,7 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN005",
-        dateTime: "June 3 2018, 4:22:03 pm",
+        dateTime: "April 3 2015, 4:22:03 pm",
         description: "Department Workers",
         status: "Success",
         amount_usd: -15000.0,
@@ -905,7 +905,7 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN005",
-        dateTime: "April 15 2018, 1:04:02 pm",
+        dateTime: "January 15 2015, 1:04:02 pm",
         description: "Transfer from TABITHA MARTEL",
         status: "Success",
         amount_usd: 100.0,
@@ -913,7 +913,7 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN006",
-        dateTime: "January 8 2018, 10:11:22 am",
+        dateTime: "January 8 2014, 10:11:22 am",
         description: "Transfer from NICHOLAS DUKE",
         status: "Success",
         amount_usd: 2100.0,
@@ -921,7 +921,7 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN007",
-        dateTime: "July 2 2017, 7:08:32 am",
+        dateTime: "July 2 2013, 7:08:32 am",
         description: "Transfer from BRANDON PERKINS",
         status: "Success",
         amount_usd: 15000.0,
@@ -929,7 +929,7 @@ export const mockAccounts: Account[] = [
       },
       {
         transaction_id: "TXN008",
-        dateTime: "May 23 2017, 1:15:02 pm",
+        dateTime: "May 23 2013, 1:15:02 pm",
         description: "Transfer from BT Group",
         status: "Success",
         amount_usd: 49000.0,
