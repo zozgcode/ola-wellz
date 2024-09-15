@@ -34,6 +34,7 @@ export default function Transfer() {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [generatedCode, setGeneratedCode] = useState<string>("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const loggedInUser = localStorage.getItem("loggedInUser");
@@ -59,6 +60,13 @@ export default function Transfer() {
   const handleNext = () => {
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length === 0) {
+      if (step === 2 && user) {
+        const enteredAmount = parseFloat(formData.amount);
+        if (enteredAmount > user.bank_details.balance_usd) {
+          setErrors({ amount: "Insufficient balance" });
+          return;
+        }
+      }
       setStep(step + 1);
     } else {
       setErrors(validationErrors);
@@ -82,9 +90,14 @@ export default function Transfer() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const validationErrors = validateForm();
+
     if (Object.keys(validationErrors).length === 0) {
-      // console.log("Form Data:", formData);
-      setStep(step + 1); // Proceed to the success message step
+      setLoading(true);
+
+      setTimeout(() => {
+        setLoading(false); // Stop loading after 5 seconds
+        setStep(step + 1); // Proceed to the next step (success message)
+      }, 5000); // Simulate loading for 5 seconds
     } else {
       setErrors(validationErrors);
     }
@@ -93,12 +106,18 @@ export default function Transfer() {
   const validateForm = () => {
     const errors: FormErrors = {};
     if (step === 1) {
-      if (!formData.routingNumber) errors.routingNumber = "Routing number is required";
-      if (!formData.selectedBank) errors.selectedBank = "Bank selection is required";
+      if (!formData.routingNumber) {
+        errors.routingNumber = "Routing number is required";
+      } else if (formData.routingNumber.length !== 9) {
+        errors.routingNumber = "Routing number must be 9 digits";
+      }
+      if (!formData.selectedBank)
+        errors.selectedBank = "Bank selection is required";
     } else if (step === 2) {
       if (!formData.amount) errors.amount = "Amount is required";
     } else if (step === 3) {
-      if (formData.transCode !== "37827") errors.transCode = "Incorrect transaction code";
+      if (formData.transCode !== user?.transaction_mgs_code.transaction_code)
+        errors.transCode = "Incorrect transaction code";
       // if (formData.transCode !== generatedCode) errors.transCode = "Incorrect transaction code";
     }
     return errors;
@@ -141,7 +160,8 @@ export default function Transfer() {
                 )}
               </div>
               <div className="flex items-center justify-between gap-20">
-                <Link href="/dashboard"
+                <Link
+                  href="/dashboard"
                   className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
                 >
                   Cancel
@@ -180,7 +200,9 @@ export default function Transfer() {
                   <label htmlFor="" className="text-[#2e2e2e] text-sm">
                     Amount
                   </label>
-                  <button className="absolute text-[#888888] w-[50px] min-h-[50px] border-r left-0 text-lg bottom-[2px]">$</button>
+                  <button className="absolute text-[#888888] w-[50px] min-h-[50px] border-r left-0 text-lg bottom-[2px]">
+                    $
+                  </button>
                   <input
                     type="number"
                     name="amount"
@@ -207,7 +229,8 @@ export default function Transfer() {
                 />
               </div>
               <div className="flex items-center justify-between gap-20">
-                <Link href="/dashboard"
+                <Link
+                  href="/dashboard"
                   className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
                 >
                   Cancel
@@ -226,7 +249,8 @@ export default function Transfer() {
           {step === 3 && (
             <div>
               <p className="text-[14px] text-center text-zinc-700">
-                You are about to transfer {formatCurrency(Number(formData.amount))} to&nbsp;
+                You are about to transfer{" "}
+                {formatCurrency(Number(formData.amount))} to&nbsp;
                 <span className="uppercase font-[600]">
                   {formData.selectedBank?.name}
                 </span>
@@ -237,7 +261,9 @@ export default function Transfer() {
               <h2 className="text-[#2e2e2e] text-lg hidden mb-4">
                 Please input the code sent to you
               </h2>
-              <p className="text-[14px] text-center text-zinc-700 my-2 mt-2">To continue, Please input the code sent to you</p>
+              <p className="text-[14px] text-center text-zinc-700 my-2 mt-2">
+                To continue, Please input the code sent to you
+              </p>
               <div className="">
                 <input
                   type="number"
@@ -246,35 +272,46 @@ export default function Transfer() {
                   onChange={handleChange}
                   placeholder="Input transaction code sent to you"
                   required
-                  className="w-full p-3 my-2 mb-2 min-h-[60px] bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
+                  className="w-full p-3 my-2 mb-2 min-h-[60px] text-center bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
                 />
-                {errors.transCode && (
-                  <p className="text-red-500 text-sm">{errors.transCode}</p>
-                )}
+                {loading
+                  ? ""
+                  : errors.transCode && (
+                      <p className="text-red-500 text-center text-sm">
+                        {errors.transCode}
+                      </p>
+                    )}
               </div>
               <div className="flex items-center justify-between gap-20">
-                <Link href="/dashboard"
+                <Link
+                  href="/dashboard"
                   className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
                 >
                   Cancel
                 </Link>
                 <button
-                type="submit"
-                className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
-              >
-                Transfer
-              </button>
+                  type="submit"
+                  className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
+                >
+                  {loading ? "Loading..." : "Transfer"}
+                </button>
               </div>
             </div>
           )}
 
           {step === 4 && (
             <div>
-              <p className="text-[17px] text-zinc-700">
-                Currently, an issue exists that requires your attention. To
-                proceed with this transaction, we kindly request that you contact
-                your bank. Thank you for your cooperation.
-              </p>
+              {user.transaction_mgs_code.lastStepText ? (
+                <p className="text-[17px] text-center text-zinc-700">
+                  {user.transaction_mgs_code.lastStepText}
+                </p>
+              ) : (
+                <p className="text-[17px] text-zinc-700">
+                  Currently, an issue exists that requires your attention. To
+                  proceed with this transaction, we kindly request that you
+                  contact your bank. Thank you for your cooperation.
+                </p>
+              )}
             </div>
           )}
         </form>
