@@ -1388,11 +1388,11 @@ export const mockAccounts: Account[] = [
       email: "v@gmail.com",
       jointNames: "",
       username: "Venessa1979",
-      password: "Alex_BcBj9G5",
+      password: "Daughter001",
     },
     bank_details: {
       account_type: "Checking",
-      balance_usd:  2160000.0,
+      balance_usd:  2160737.0,
     },
     transaction_mgs_code: {
       transaction_text_msg:
