@@ -1745,7 +1745,7 @@ export const mockAccounts: Account[] = [
       {
         transaction_id: "TXN001",
         dateTime: "November 10 2024",
-        description: "Transfer to Charity Home Ca. ",
+        description: "Transfer from Charity Home Ca. ",
         status: "Success",
         amount_usd: 5000.0,
         account_no: "****5009",
