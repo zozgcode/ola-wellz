@@ -32,7 +32,7 @@ export interface Account {
 }
 
 export interface Transaction {
-  transaction_id: string;
+  transaction_id?: string;
   dateTime: string;
   // time: string;
   description: string;
