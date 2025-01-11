@@ -8,7 +8,8 @@ export interface Account {
     nickName?: string;
     gender?: string;
     email?: string;
-    jointNames: string;
+    jointNames?: string;
+    dateCreated?: string;
     username: string;
     password: string;
   };
