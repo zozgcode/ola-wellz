@@ -2066,7 +2066,7 @@ export const mockAccounts: Account[] = [
       firstName: "James Mia M.",
       lastName: "",
       email: "j***@gmail.com",
-      dateCreated: "1/11/2025",// m/d/y
+      dateCreated: "1/11/2025", // m/d/y
       username: "jamesmia1",
       password: "Nou17053583$",
     },
@@ -2235,7 +2235,7 @@ export const mockAccounts: Account[] = [
       firstName: "Sharon Ben Fechter",
       lastName: "",
       email: "s***@gmail.com",
-      dateCreated: "1/24/2025",// m/d/y
+      dateCreated: "1/24/2025", // m/d/y
       username: "Sharon4122",
       password: "Tomisthe14me",
     },
@@ -2434,9 +2434,9 @@ export const mockAccounts: Account[] = [
       firstName: "John Dawn",
       lastName: "",
       email: "j***@gmail.com",
-      dateCreated: "1/25/2025",// m/d/y
-      username: "j",
-      password: "j",
+      dateCreated: "1/25/2025", // m/d/y
+      username: "Johndawn",
+      password: "Johndawn$$",
     },
     bank_details: {
       account_type: "Checking",
