@@ -2627,4 +2627,107 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC018",
+    holder: {
+      firstName: "LimeLifeByAlcone LLC",
+      lastName: "",
+      email: "l***@gmail.com",
+      dateCreated: "1/28/2025", // m/d/y
+      username: "spoiltmama9t9",
+      password: "Eteniaharri@1",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 1200850.17,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "January 17 2025",
+        description: "Incoming Wire Transfer",
+        status: "Success",
+        amount_usd: 25000.0,
+      },
+      {
+        dateTime: "January 15 2025",
+        description: "Transfer to Noor Bank, Dubai",
+        status: "Success",
+        amount_usd: -83400.0,
+      },
+      {
+        dateTime: "January 12 2025",
+        description: "Coya Dubai, Dubai",
+        status: "Success",
+        amount_usd: 12000.0,
+      },
+      {
+        dateTime: "January 10 2025",
+        description: "Uber Ride Payment",
+        status: "Success",
+        amount_usd: -35.75,
+      },
+      {
+        dateTime: "January 8 2025",
+        description: "Walmart Grocery Shopping",
+        status: "Success",
+        amount_usd: -1120.45,
+      },
+      {
+        dateTime: "January 5 2025",
+        description: "Bulgari Resort Dubai",
+        status: "Success",
+        amount_usd: -6500.0,
+      },
+      {
+        dateTime: "January 3 2025",
+        description: "Wire Transfer to Good Purchase store",
+        status: "Success",
+        amount_usd: -320000.0,
+      },
+      {
+        dateTime: "January 2 2025",
+        description: "Incoming Wire Transfer",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "January 1 2025",
+        description: "Groceries",
+        status: "Success",
+        amount_usd: -850.0,
+      },
+      {
+        dateTime: "December 29 2024",
+        description: "Uber Ride Payment",
+        status: "Success",
+        amount_usd: -45.0,
+      },
+      {
+        dateTime: "December 28 2024",
+        description: "Shopping at Dubai Mall",
+        status: "Success",
+        amount_usd: -3150.0,
+      },
+      {
+        dateTime: "December 20 2024",
+        description: "Wire Transfer from Al Habtoor Group, Dubai",
+        status: "Success",
+        amount_usd: 175000.0,
+      },
+      {
+        dateTime: "December 18 2024",
+        description: "Refund, walmart Getex",
+        status: "Success",
+        amount_usd: 450.0,
+      },
+    ],
+  },
 ];
