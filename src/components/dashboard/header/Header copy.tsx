@@ -43,7 +43,7 @@ export default function Header({ handleLogout, user }: any) {
               <div className="flex w-full justify-between items-center">
                 <span className="text-[#3f3f3f] font-normal">Full Name</span>
                 <span className="uppercase text-[#252525] font-medium truncate max-w-[200px] sm:max-w-full">
-                  {user.holder.firstName}&nbsp;{user.holder.lastName}
+                  {user.holder.fullName}&nbsp;{user.holder.lastName}
                 </span>
               </div>
               <div className="flex w-full justify-between items-center">

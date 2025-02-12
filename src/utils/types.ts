@@ -2,7 +2,7 @@
 export interface Account {
   account_id: string;
   holder: {
-    firstName?: string;
+    fullName?: string;
     lastName?: string;
     mobileNumber?: string;
     nickName?: string;

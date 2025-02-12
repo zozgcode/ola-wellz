@@ -4,7 +4,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC001",
     holder: {
-      firstName: "Andrew",
+      fullName: "Andrew",
       lastName: "McNulty",
       mobileNumber: "+1-224-463-7589",
       nickName: "jford",
@@ -165,7 +165,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC002",
     holder: {
-      firstName: "Jakob",
+      fullName: "Jakob",
       lastName: "Maas",
       mobileNumber: "+1-224-463-7589",
       nickName: "jMas",
@@ -327,7 +327,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC003",
     holder: {
-      firstName: "Lanie",
+      fullName: "Lanie",
       lastName: "Gardner",
       email: "l*@gmail.com",
       jointNames: "",
@@ -518,7 +518,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC004",
     holder: {
-      firstName: "Jacob Smith",
+      fullName: "Jacob Smith",
       lastName: "",
       email: "j*@gmail.com",
       jointNames: "",
@@ -693,7 +693,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC005",
     holder: {
-      firstName: "Richard",
+      fullName: "Richard",
       lastName: "Storm",
       email: "r*@gmail.com",
       jointNames: "",
@@ -844,7 +844,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC006",
     holder: {
-      firstName: "Roland",
+      fullName: "Roland",
       lastName: "Nashoba",
       email: "rolandnashoba@gmail.com",
       jointNames: "",
@@ -940,7 +940,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC007",
     holder: {
-      firstName: "Ailbert Stan",
+      fullName: "Ailbert Stan",
       lastName: "",
       email: "loganstan1111@gmail.com",
       jointNames: "",
@@ -1109,7 +1109,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC008",
     holder: {
-      firstName: "Hannna",
+      fullName: "Hannna",
       lastName: "Rothrock",
       email: "h@gmail.com",
       jointNames: "",
@@ -1278,7 +1278,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC009",
     holder: {
-      firstName: "Christopher Bright C.",
+      fullName: "Christopher Bright C.",
       lastName: "",
       email: "c@gmail.com",
       jointNames: "",
@@ -1383,7 +1383,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC010",
     holder: {
-      firstName: "Vannesa",
+      fullName: "Vannesa",
       lastName: "Alex",
       email: "v@gmail.com",
       jointNames: "",
@@ -1496,7 +1496,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC011",
     holder: {
-      firstName: "Connie",
+      fullName: "Connie",
       lastName: "Curran",
       email: "c@gmail.com",
       jointNames: "",
@@ -1609,7 +1609,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC012",
     holder: {
-      firstName: "Cooper",
+      fullName: "Cooper",
       lastName: "Alan",
       email: "c@gmail.com",
       jointNames: "",
@@ -1722,7 +1722,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC013",
     holder: {
-      firstName: "Richard",
+      fullName: "Richard",
       lastName: "Laure",
       email: "r@gmail.com",
       jointNames: "",
@@ -1835,7 +1835,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC014",
     holder: {
-      firstName: "Troy W Robbinson",
+      fullName: "Troy W Robbinson",
       lastName: "",
       email: "t***@gmail.com",
       jointNames: "",
@@ -1930,7 +1930,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC015",
     holder: {
-      firstName: "Wood Andra B.",
+      fullName: "Wood Andra B.",
       lastName: "",
       email: "w***@gmail.com",
       dateCreated: "1/10/2025",
@@ -2063,7 +2063,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC015",
     holder: {
-      firstName: "James Mia M.",
+      fullName: "James Mia M.",
       lastName: "",
       email: "j***@gmail.com",
       dateCreated: "1/11/2025", // m/d/y
@@ -2232,7 +2232,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC016",
     holder: {
-      firstName: "Sharon Ben Fechter",
+      fullName: "Sharon Ben Fechter",
       lastName: "",
       email: "s***@gmail.com",
       dateCreated: "1/24/2025", // m/d/y
@@ -2431,7 +2431,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC017",
     holder: {
-      firstName: "John Dawn",
+      fullName: "John Dawn",
       lastName: "",
       email: "j***@gmail.com",
       dateCreated: "1/25/2025", // m/d/y
@@ -2630,7 +2630,7 @@ export const mockAccounts: Account[] = [
   {
     account_id: "ACC018",
     holder: {
-      firstName: "LimeLifeByAlcone LLC",
+      fullName: "LimeLifeByAlcone LLC",
       lastName: "",
       email: "l***@gmail.com",
       dateCreated: "1/28/2025", // m/d/y
@@ -2727,6 +2727,200 @@ export const mockAccounts: Account[] = [
         description: "Refund, walmart Getex",
         status: "Success",
         amount_usd: 450.0,
+      },
+    ],
+  },
+  {
+    account_id: "ACC019",
+    holder: {
+      fullName: "Jada Bostic",
+      lastName: "",
+      email: "j*@gmail.com",
+      dateCreated: "2/12/2025", // m/d/y
+      username: "Jadabosti24@",
+      password: "Bostic34@",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 50140.17,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "February 10, 2025",
+        description: "Transfer from Crew Energy Inc",
+        status: "Success",
+        amount_usd: 18500.0,
+      },
+      {
+        dateTime: "January 17, 2025",
+        description: "Incoming Wire Transfer",
+        status: "Success",
+        amount_usd: 25000.0,
+      },
+      {
+        dateTime: "January 15, 2025",
+        description: "Transfer to Citybank, Illinois",
+        status: "Success",
+        amount_usd: -83400.0,
+      },
+      {
+        dateTime: "January 12, 2025",
+        description: "Coya Dubai, Dubai",
+        status: "Success",
+        amount_usd: 12000.0,
+      },
+      {
+        dateTime: "January 10, 2025",
+        description: "Uber Ride Payment",
+        status: "Success",
+        amount_usd: -35.75,
+      },
+      {
+        dateTime: "January 8, 2025",
+        description: "Walmart Grocery Shopping",
+        status: "Success",
+        amount_usd: -1120.45,
+      },
+      {
+        dateTime: "January 5, 2025",
+        description: "Bulgari Resort",
+        status: "Success",
+        amount_usd: -6500.0,
+      },
+      {
+        dateTime: "January 3, 2025",
+        description: "Wire Transfer to Good Purchase store",
+        status: "Success",
+        amount_usd: -320000.0,
+      },
+      {
+        dateTime: "January 2, 2025",
+        description: "Incoming Wire Transfer",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "January 1, 2025",
+        description: "Groceries",
+        status: "Success",
+        amount_usd: -850.0,
+      },
+      {
+        dateTime: "December 29, 2024",
+        description: "Uber Ride Payment",
+        status: "Success",
+        amount_usd: -45.0,
+      },
+      {
+        dateTime: "December 28, 2024",
+        description: "Shopping at Dubai Mall",
+        status: "Success",
+        amount_usd: -3150.0,
+      },
+      {
+        dateTime: "December 20, 2024",
+        description: "Wire Transfer from Al Habtoor Group",
+        status: "Success",
+        amount_usd: 175000.0,
+      },
+      {
+        dateTime: "December 18, 2024",
+        description: "Refund, walmart Getex",
+        status: "Success",
+        amount_usd: 450.0,
+      },
+    ],
+  },
+  {
+    account_id: "ACC020",
+    holder: {
+      fullName: "Steve Alexander",
+      email: "j*@gmail.com",
+      dateCreated: "2/12/2025", // m/d/y
+      username: "Stevealexander12",
+      password: "Steve123",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 964587.2,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "February 13, 2025",
+        description: "DEPOSIT XXXXXX8324",
+        status: "Success",
+        amount_usd: 170000.0,
+      },
+      {
+        dateTime: "January 22, 2025",
+        description: "Wells Fargo CD profit XXXXXX8324",
+        status: "Success",
+        amount_usd: 41840.4,
+      },
+      {
+        dateTime: "December 20, 2024",
+        description: "Transfer from Fort Worth Welders Supply Inc XXXXXX8324",
+        status: "Success",
+        amount_usd: 98000.0,
+      },
+      {
+        dateTime: "November 9, 2024",
+        description: "Transfer from Forney Fence Supply XXXXXX8324",
+        status: "Success",
+        amount_usd: 47000.0,
+      },
+      {
+        dateTime: "October 19, 2024",
+        description: "Wells Fargo CD profit XXXXXX8324",
+        status: "Success",
+        amount_usd: 45840.4,
+      },
+      {
+        dateTime: "September 13, 2024",
+        description:
+          "Transfer from Lincoln Electrics XXXXXX8324 Funds Transfer",
+        status: "Success",
+        amount_usd: 45650.8,
+      },
+      {
+        dateTime: "August 3, 2024",
+        description: "Metroplex Welding Supply Inc",
+        status: "Success",
+        amount_usd: -42450.5,
+      },
+      {
+        dateTime: "July 8, 2024",
+        description: "Transfer from Lincoln Electrics XXXXXX2819",
+        status: "Success",
+        amount_usd: 65500.7,
+      },
+      {
+        dateTime: "June 30, 2024",
+        description: "Bammy work wear and maintenance",
+        status: "Success",
+        amount_usd: -7500.5,
+      },
+      {
+        dateTime: "May 23, 2024",
+        description: "DEPOSIT XXXXXX8324",
+        status: "Success",
+        amount_usd: 450754.9,
       },
     ],
   },

