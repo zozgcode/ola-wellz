@@ -34,9 +34,9 @@ export default function Login() {
   const hour = date.getHours();
 
   return (
-    <div className="">
+    <div className="h-screen relative">
       <Header />
-      <div className="h-screen bg-[white] p-4">
+      <div className="bg-[white] p-4">
         <div className="mb-2 mx-auto max-w-[400px] text-[30px] text-center">
           {hour >= 12 ? (hour >= 17 ? <h2>Good Evening</h2> : <h2>Good Afternoon</h2>) : <h2>Good Morning</h2>}
           <span className="text-[15px]">Sign on to manage your accounts</span>
@@ -92,6 +92,9 @@ export default function Login() {
             </div>
           </form>
         </div>
+      </div>
+      <div className="w-full min-h-[70px] absolute bottom-0 z-50 flex px-[10px] p-[20px]">
+        <p className="text-sm text-[#22262A] text-center">© 2025 - 6201 W Olive Ave. Apt 1214 Glendale AZ 85302-4537 United States</p>
       </div>
     </div>
   );
