@@ -2942,7 +2942,7 @@ export const mockAccounts: Account[] = [
         "To continue this transaction, please enter the code sent to you",
       transaction_code: "237832",
       lastStepText:
-        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+        "You’ve to activate your account with $2755 before you could make a transaction.",
       wireDate: true,
     },
     transaction_history: [
