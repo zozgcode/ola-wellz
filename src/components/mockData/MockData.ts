@@ -2942,7 +2942,7 @@ export const mockAccounts: Account[] = [
         "To continue this transaction, please enter the code sent to you",
       transaction_code: "237832",
       lastStepText:
-        "You’ve to activate your account with $2755 before you could make a transaction.",
+        "You’re almost there Dave, Pay $1750 fee to finished activating your account",
       wireDate: true,
     },
     transaction_history: [
