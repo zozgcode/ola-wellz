@@ -2954,4 +2954,148 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC022",
+    holder: {
+      fullName: "Raymond Phillip",
+      email: "r*@gmail.com",
+      dateCreated: "3/9/2025", // m/d/y
+      username: "Lora1977",
+      password: "Wealth2017",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 800000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "March 7, 2025",
+        description: "Transfer from NovaTech Solutions XXXXXX1290",
+        status: "Success",
+        amount_usd: 18000.0,
+      },
+      {
+        dateTime: "February 23, 2025",
+        description: "Transfer to Stellar Enterprises XXXXXX7834",
+        status: "Success",
+        amount_usd: -9500.0,
+      },
+      {
+        dateTime: "February 10, 2025",
+        description: "Transfer from Apex Corp XXXXXX4567",
+        status: "Success",
+        amount_usd: 16000.0,
+      },
+      {
+        dateTime: "January 28, 2025",
+        description: "Transfer from John Peters XXXXXX9821",
+        status: "Success",
+        amount_usd: 8700.0,
+      },
+      {
+        dateTime: "January 15, 2025",
+        description: "Transfer from Quantum Dynamics XXXXXX7632",
+        status: "Success",
+        amount_usd: 14000.0,
+      },
+      {
+        dateTime: "December 12, 2024",
+        description: "Transfer to Bright Future Ltd XXXXXX1112",
+        status: "Success",
+        amount_usd: -7200.0,
+      },
+      {
+        dateTime: "November 27, 2023",
+        description: "Transfer from Clara Morgan XXXXXX3356",
+        status: "Success",
+        amount_usd: 13000.0,
+      },
+      {
+        dateTime: "August 13, 2023",
+        description: "Transfer to Horizon Tech XXXXXX8429",
+        status: "Success",
+        amount_usd: -6500.0,
+      },
+      {
+        dateTime: "May 21, 2023",
+        description: "Transfer from Zenith Global XXXXXX5500",
+        status: "Success",
+        amount_usd: 12500.0,
+      },
+      {
+        dateTime: "February 10, 2022",
+        description: "Transfer from Lisa Fernandez XXXXXX2308",
+        status: "Success",
+        amount_usd: 6000.0,
+      },
+      {
+        dateTime: "October 8, 2021",
+        description: "Transfer from Omega Ventures XXXXXX9001",
+        status: "Success",
+        amount_usd: 11000.0,
+      },
+      {
+        dateTime: "July 14, 2020",
+        description: "Transfer to Daniel Craig XXXXXX4507",
+        status: "Success",
+        amount_usd: -5800.0,
+      },
+      {
+        dateTime: "March 19, 2019",
+        description: "Transfer from Summit Corp XXXXXX6725",
+        status: "Success",
+        amount_usd: 10500.0,
+      },
+      {
+        dateTime: "December 2, 2018",
+        description: "Transfer to Helen Motors XXXXXX1234",
+        status: "Success",
+        amount_usd: -5500.0,
+      },
+      {
+        dateTime: "November 15, 2017",
+        description: "Transfer from Alpha Holdings XXXXXX7788",
+        status: "Success",
+        amount_usd: 10000.0,
+      },
+      {
+        dateTime: "August 3, 2017",
+        description: "Transfer to Jason Lee XXXXXX9992",
+        status: "Success",
+        amount_usd: -5300.0,
+      },
+      {
+        dateTime: "May 29, 2017",
+        description: "Transfer from BrightStar Ltd XXXXXX2241",
+        status: "Success",
+        amount_usd: 9700.0,
+      },
+      {
+        dateTime: "March 18, 2017",
+        description: "Transfer to Sarah Connor XXXXXX8820",
+        status: "Success",
+        amount_usd: -5100.0,
+      },
+      {
+        dateTime: "January 10, 2017",
+        description: "Transfer from Horizon Enterprises XXXXXX7777",
+        status: "Success",
+        amount_usd: 9500.0,
+      },
+      {
+        dateTime: "November 20, 2016",
+        description: "Transfer to GreenTech Corp XXXXXX4448",
+        status: "Success",
+        amount_usd: -4900.0,
+      },
+    ],
+  },
 ];
