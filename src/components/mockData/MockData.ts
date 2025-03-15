@@ -3098,4 +3098,52 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC023",
+    holder: {
+      fullName: "Gionna Daddio",
+      email: "g*@gmail.com",
+      dateCreated: "3/15/2025", // m/d/y
+      username: "Gionnadaddio",
+      password: "Luckman247$",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 2300456.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "March 7, 2022",
+        description: "Transfer from NovaTech Solutions XXXXXX1290",
+        status: "Success",
+        amount_usd: 18000.0,
+      },
+      {
+        dateTime: "February 23, 2022",
+        description: "Transfer to Stellar Enterprises XXXXXX7834",
+        status: "Success",
+        amount_usd: -9500.0,
+      },
+      {
+        dateTime: "February 10, 2022",
+        description: "Transfer from Apex Corp XXXXXX4567",
+        status: "Success",
+        amount_usd: 16000.0,
+      },
+      {
+        dateTime: "January 28, 2022",
+        description: "Transfer to Good Purchase store XXXXXX9821",
+        status: "Success",
+        amount_usd: -8700.0,
+      },
+    ],
+  },
 ];
