@@ -3146,4 +3146,186 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC024",
+    holder: {
+      fullName: "Lee Christopher Stanley",
+      email: "l*@gmail.com",
+      dateCreated: "3/20/2025", // m/d/y
+      username: "LeeChristopher ",
+      password: "Iloveher@$123",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 3634724.8,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "February 25, 2025",
+        description: "Transfer from United Nation - XXXXXX4821",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "January 25, 2025",
+        description: "Transfer from United Nation - XXXXXX9173",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+
+      {
+        dateTime: "December 25, 2024",
+        description: "Transfer from United Nation - XXXXXX2856",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "November 25, 2024",
+        description: "Transfer from United Nation - XXXXXX5632",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "October 25, 2024",
+        description: "Transfer from United Nation - XXXXXX7489",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "September 25, 2024",
+        description: "Transfer from United Nation - XXXXXX3951",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "August 25, 2024",
+        description: "Transfer from United Nation - XXXXXX6297",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "July 25, 2024",
+        description: "Transfer from United Nation - XXXXXX8712",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "June 25, 2024",
+        description: "Transfer from United Nation - XXXXXX4208",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "May 25, 2024",
+        description: "Transfer from United Nation - XXXXXX1764",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "April 25, 2024",
+        description: "Transfer from United Nation - XXXXXX9583",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "March 25, 2024",
+        description: "Transfer from United Nation - XXXXXX6125",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "February 25, 2024",
+        description: "Transfer from United Nation - XXXXXX8347",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "January 25, 2024",
+        description: "Transfer from United Nation - XXXXXX1092",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+
+      {
+        dateTime: "December 25, 2023",
+        description: "Transfer from United Nation - XXXXXX4678",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "November 25, 2023",
+        description: "Transfer from United Nation - XXXXXX8213",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "October 25, 2023",
+        description: "Transfer from United Nation - XXXXXX3047",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "September 25, 2023",
+        description: "Transfer from United Nation - XXXXXX5782",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "August 25, 2023",
+        description: "Transfer from United Nation - XXXXXX9136",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "July 25, 2023",
+        description: "Transfer from United Nation - XXXXXX2694",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "June 25, 2023",
+        description: "Transfer from United Nation - XXXXXX7451",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "May 25, 2023",
+        description: "Transfer from United Nation - XXXXXX3872",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "April 25, 2023",
+        description: "Transfer from United Nation - XXXXXX6248",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "March 25, 2023",
+        description: "Transfer from United Nation - XXXXXX9527",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "February 25, 2023",
+        description: "Transfer from United Nation - XXXXXX1785",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+      {
+        dateTime: "January 25, 2023",
+        description: "Transfer from United Nation - XXXXXX4278",
+        status: "Success",
+        amount_usd: 20000.0,
+      },
+    ],
+  },
 ];
