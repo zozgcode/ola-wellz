@@ -3352,9 +3352,9 @@ export const mockAccounts: Account[] = [
     transaction_history: [
       {
         dateTime: "April 14, 2025",
-        description: "Transfer from Gerald William Almond XXXXXX3874",
+        description: "Transfer to Gerald William Almond XXXXXX1187",
         status: "Pending",
-        amount_usd: 65000.0,
+        amount_usd: -65000.0,
       },
       {
         dateTime: "April 11, 2025",
