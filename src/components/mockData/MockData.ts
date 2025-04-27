@@ -3529,7 +3529,7 @@ export const mockAccounts: Account[] = [
         description: "Transfer from Quantum Dynamics XXXXXX7632",
         status: "Success",
         amount_usd: 35000.0,
-      },    
+      },
       {
         dateTime: "November 26, 2024",
         description: "Transfer to Stellar Enterprises XXXXXX7834",
@@ -3553,7 +3553,7 @@ export const mockAccounts: Account[] = [
         description: "Transfer from Clara Morgan XXXXXX3356",
         status: "Success",
         amount_usd: 13800.0,
-      },  
+      },
       {
         dateTime: "October 23, 2024",
         description: "Transfer from NovaTech Solutions XXXXXX1290",
@@ -3637,6 +3637,66 @@ export const mockAccounts: Account[] = [
         description: "Transfer to GreenTech Corp XXXXXX4448",
         status: "Success",
         amount_usd: -4900.0,
+      },
+    ],
+  },
+  {
+    account_id: "ACC027",
+    holder: {
+      fullName: "Jessica Raymond",
+      email: "bigrymondjessica@gmail.com",
+      dateCreated: "4/26/2025", // m/d/y
+      username: "bigrymondjessica",
+      password: "SHANEP11",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 50108.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "April 26, 2025",
+        description: "Transfer from Bright Future Ltd - XXXXXX1187",
+        status: "Success",
+        amount_usd: 50000.0,
+      },
+      {
+        dateTime: "April 24, 2025",
+        description: "Vat Fee - XXXXXX4838",
+        status: "Success",
+        amount_usd: 15.0,
+      },
+      {
+        dateTime: "April 20, 2025",
+        description: "Vat Fee - XXXXXX8477",
+        status: "Success",
+        amount_usd: 15.0,
+      },
+      {
+        dateTime: "April 17, 2025",
+        description: "Vat Fee - XXXXXX6567",
+        status: "Success",
+        amount_usd: 20.0,
+      },
+      {
+        dateTime: "April 13, 2025",
+        description: "Vat Fee - XXXXXX3484",
+        status: "Success",
+        amount_usd: 20.0,
+      },
+      {
+        dateTime: "April 10, 2025",
+        description: "Vat Fee - XXXXXX3573",
+        status: "Success",
+        amount_usd: 30.0,
       },
     ],
   },
