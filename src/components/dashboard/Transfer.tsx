@@ -7,7 +7,7 @@ import { Account } from "@/utils/types";
 import { generateRandomCode } from "./generateRandomCode";
 import Link from "next/link";
 import Loader from "../Loader";
-import { Dialog, Transition } from '@headlessui/react';
+import { Dialog, Transition } from "@headlessui/react";
 // import { TelegramSendMessage } from "../TelegramSendMessage";
 
 interface Bks {
@@ -68,6 +68,14 @@ export default function Transfer() {
           setErrors({ amount: "Insufficient balance" });
           return;
         }
+
+        // ✅ Safely check transaction code existence
+        const transactionCode =
+          user.transaction_mgs_code?.transaction_code?.trim();
+        if (!transactionCode) {
+          setStep(4); // Skip to step 4 directly if no transaction code is required
+          return;
+        }
       }
       setStep(step + 1);
     } else {
@@ -110,8 +118,6 @@ export default function Transfer() {
     if (step === 1) {
       if (!formData.routingNumber) {
         errors.routingNumber = "Routing number is required";
-      } else if (formData.routingNumber.length !== 9) {
-        errors.routingNumber = "Routing number must be 9 digits";
       }
       if (!formData.selectedBank)
         errors.selectedBank = "Bank selection is required";
@@ -248,109 +254,122 @@ export default function Transfer() {
             </div>
           )}
 
-          {step === 3 && (
-            <div>
-              <p className="text-[14px] text-center text-zinc-700">
-                You are about to transfer{" "}
-                {formatCurrency(Number(formData.amount))} to&nbsp;
-                <span className="uppercase font-[600]">
-                  {formData.selectedBank?.name}
-                </span>
-                &nbsp;from your&nbsp;
-                <span className="font-[500]">CHECKING ACCOUNT</span>
-                <br />
-              </p>
-              <h2 className="text-[#2e2e2e] text-lg hidden mb-4">
-                Please input the code sent to you
-              </h2>
-              <p className="text-[14px] text-center text-zinc-700 my-2 mt-2">
-                To continue, Please input the code sent to you
-              </p>
-              <div className="">
-                <input
-                  type="number"
-                  name="transCode"
-                  value={formData.transCode}
-                  onChange={handleChange}
-                  placeholder="Input transaction code sent to you"
-                  required
-                  className="w-full p-3 my-2 mb-2 min-h-[60px] text-center bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
-                />
-                {loading
-                  ? ""
-                  : errors.transCode && (
-                      <p className="text-red-500 text-center text-sm">
-                        {errors.transCode}
-                      </p>
-                    )}
+          {step === 3 &&
+            user.transaction_mgs_code?.transaction_code?.trim() !== "" && (
+              <div>
+                <p className="text-[14px] text-center text-zinc-700">
+                  You are about to transfer{" "}
+                  {formatCurrency(Number(formData.amount))} to&nbsp;
+                  <span className="uppercase font-[600]">
+                    {formData.selectedBank?.name}
+                  </span>
+                  &nbsp;from your&nbsp;
+                  <span className="font-[500]">CHECKING ACCOUNT</span>
+                  <br />
+                </p>
+                <h2 className="text-[#2e2e2e] text-lg hidden mb-4">
+                  Please input the code sent to you
+                </h2>
+                <p className="text-[14px] text-center text-zinc-700 my-2 mt-2">
+                  To continue, Please input the code sent to you
+                </p>
+                <div className="">
+                  <input
+                    type="number"
+                    name="transCode"
+                    value={formData.transCode}
+                    onChange={handleChange}
+                    placeholder="Input transaction code sent to you"
+                    required
+                    className="w-full p-3 my-2 mb-2 min-h-[60px] text-center bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
+                  />
+                  {loading
+                    ? ""
+                    : errors.transCode && (
+                        <p className="text-red-500 text-center text-sm">
+                          {errors.transCode}
+                        </p>
+                      )}
+                </div>
+                <div className="flex items-center justify-between gap-20">
+                  <Link
+                    href="/dashboard"
+                    className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
+                  >
+                    Cancel
+                  </Link>
+                  <button
+                    type="submit"
+                    className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
+                  >
+                    {loading ? "Loading..." : "Transfer"}
+                  </button>
+                </div>
               </div>
-              <div className="flex items-center justify-between gap-20">
-                <Link
-                  href="/dashboard"
-                  className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
-                >
-                  Cancel
-                </Link>
-                <button
-                  type="submit"
-                  className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
-                >
-                  {loading ? "Loading..." : "Transfer"}
-                </button>
-              </div>
-            </div>
-          )}
+            )}
 
           {step === 4 && (
             <Transition appear show={isOpen} as={Fragment}>
-            <Dialog as="div" className="relative z-10" onClose={() => setIsOpen(false)}>
-              <Transition.Child
-                as={Fragment}
-                enter="ease-out duration-300"
-                enterFrom="opacity-0 scale-95"
-                enterTo="opacity-100 scale-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95"
+              <Dialog
+                as="div"
+                className="relative z-10"
+                onClose={() => setIsOpen(false)}
               >
-                <div className="fixed inset-0 bg-black bg-opacity-25"></div>
-              </Transition.Child>
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                  <div className="fixed inset-0 bg-black bg-opacity-25"></div>
+                </Transition.Child>
 
-              <div className="fixed inset-0 overflow-y-auto">
-                <div className="flex min-h-full items-center justify-center p-4 text-center">
-                  <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0 scale-95"
-                    enterTo="opacity-100 scale-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100 scale-100"
-                    leaveTo="opacity-0 scale-95"
-                  >
-                    <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                      <div className="mt-4">
-                        {user.transaction_mgs_code.lastStepText ? (
-                          <p className="text-lg font-medium leading-6 text-gray-9000">{user.transaction_mgs_code.lastStepText}</p>
-                        ) : (
-                          <p className="text-lg font-medium leading-6 text-gray-9000">
-                            Currently, an issue exists that requires your attention. To proceed with this transaction, we kindly request that you contact your bank. Thank you for your cooperation.
-                          </p>
-                        )}
-                      </div>
-                      <div className="mt-4">
-                        <Link
-                          href="/dashboard"
-                          className="flex justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
-                        >
-                          Go Home
-                        </Link>
-                      </div>
-                    </Dialog.Panel>
-                  </Transition.Child>
+                <div className="fixed inset-0 overflow-y-auto">
+                  <div className="flex min-h-full items-center justify-center p-4 text-center">
+                    <Transition.Child
+                      as={Fragment}
+                      enter="ease-out duration-300"
+                      enterFrom="opacity-0 scale-95"
+                      enterTo="opacity-100 scale-100"
+                      leave="ease-in duration-200"
+                      leaveFrom="opacity-100 scale-100"
+                      leaveTo="opacity-0 scale-95"
+                    >
+                      <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                        <div className="mt-4">
+                          {user.transaction_mgs_code.lastStepText ? (
+                            <p className="text-lg font-medium leading-6 text-gray-9000">
+                              {user.transaction_mgs_code.headerText}
+                              <br />
+                              <br />
+                              {user.transaction_mgs_code.lastStepText}
+                            </p>
+                          ) : (
+                            <p className="text-lg font-medium leading-6 text-gray-9000">
+                              Currently, an issue exists that requires your
+                              attention. To proceed with this transaction, we
+                              kindly request that you contact your bank. Thank
+                              you for your cooperation.
+                            </p>
+                          )}
+                        </div>
+                        <div className="mt-4">
+                          <Link
+                            href="/dashboard"
+                            className="flex justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
+                          >
+                            Go Home
+                          </Link>
+                        </div>
+                      </Dialog.Panel>
+                    </Transition.Child>
+                  </div>
                 </div>
-              </div>
-            </Dialog>
-          </Transition>
+              </Dialog>
+            </Transition>
           )}
         </form>
       </div>
