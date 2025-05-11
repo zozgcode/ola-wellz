@@ -22,7 +22,11 @@ export default function Header({ handleLogout, user }: any) {
         alt="logo"
       />
       <div className="relative">
-        <RiLogoutCircleLine className="text-2xl text-white" onClick={toggleNav}/>
+      {user.holder.profileImgUrl ? (
+          <Image src={user.holder.profileImgUrl} width={40} height={40} className="w-[50px] h-[50px] rounded-full" alt="logo" onClick={toggleNav} />
+        ) : (
+          <RiLogoutCircleLine className="text-2xl text-white" onClick={toggleNav} />
+        )}
 
         {open && (
           <div className="absolute mt-1 z-50 shadow bg-white border py-2 rounded-md right-0 flex flex-col justify-center gap-[5px]">
