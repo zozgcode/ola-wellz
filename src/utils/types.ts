@@ -11,6 +11,7 @@ export interface Account {
     email?: string;
     jointNames?: string;
     dateCreated?: string;
+    dateUpdated?: string;
     username: string;
     password: string;
   };

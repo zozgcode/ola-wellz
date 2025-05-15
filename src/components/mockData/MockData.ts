@@ -1947,7 +1947,7 @@ export const mockAccounts: Account[] = [
       transaction_code: "237832",
       headerText: "Dear Valued Customer,",
       lastStepText:
-        "To proceed with the transfer, please ensure all tax debts are paid in full, with a minimum payment of $2,159. This requirement aligns with regulatory guidelines. For any questions or concerns, please don't hesitate to contact us. Thank you.",
+        "To complete your requested transfer a mandatory VAT processing fee of $758.85 is required This charge complies with updated financial regulations and ensures the secure and timely handling of all transactions. If you have any questions or need further assistance please feel free to reach out to us. Thank you",
       wireDate: true,
     },
     transaction_history: [
@@ -3707,12 +3707,13 @@ export const mockAccounts: Account[] = [
       fullName: "Tina James A",
       email: "bigrymondjessica@gmail.com",
       dateCreated: "5/3/2025", // m/d/y
+      dateUpdated: "5/13/2025", // m/d/y
       username: "tinaaugust$4",
       password: "tinaRTC@05",
     },
     bank_details: {
       account_type: "Checking",
-      balance_usd: 1000000.0,
+      balance_usd: 20000000.0,
     },
     transaction_mgs_code: {
       transaction_text_msg:
@@ -3725,8 +3726,224 @@ export const mockAccounts: Account[] = [
     },
     transaction_history: [
       {
+        dateTime: "May 15, 2025, 08:00:00 am",
+        description: "Payment from Tax - XXXXXX1923",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 07:30:00 am",
+        description: "Payment from Tax - XXXXXX8475",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 07:00:00 am",
+        description: "Payment from Tax - XXXXXX6347",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 06:30:00 am",
+        description: "Payment from Tax - XXXXXX2381",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 06:00:00 am",
+        description: "Payment from Tax - XXXXXX5893",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 05:30:00 am",
+        description: "Payment from Tax - XXXXXX9147",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 05:00:00 am",
+        description: "Payment from Tax - XXXXXX3026",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 04:30:00 am",
+        description: "Payment from Tax - XXXXXX7104",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 04:00:00 am",
+        description: "Payment from Tax - XXXXXX4639",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 03:45:00 am",
+        description: "Payment from Tax - XXXXXX8812",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 03:30:00 am",
+        description: "Payment from Tax - XXXXXX3789",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 03:15:00 am",
+        description: "Payment from Tax - XXXXXX5320",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 03:10:00 am",
+        description: "Payment from Tax - XXXXXX7906",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 15, 2025, 03:00:00 am",
+        description: "Payment from Tax - XXXXXX3492",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 07:04:14 am",
+        description: "Payment from Tax - XXXXXX7346",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 07:00:00 am",
+        description: "Payment from Tax - XXXXXX9872",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 06:40:23 am",
+        description: "Payment from Tax - XXXXXX5847",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 06:30:00 am",
+        description: "Payment from Tax - XXXXXX4531",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 06:03:22 am",
+        description: "Payment from Tax - XXXXXX2105",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 05:45:00 am",
+        description: "Payment from Tax - XXXXXX1098",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 05:18:35 am",
+        description: "Payment from Tax - XXXXXX6634",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 14, 2025, 05:00:00 am",
+        description: "Payment from Tax - XXXXXX3217",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 15:58:55 pm",
+        description: "Payment from Tax - XXXXXX7346",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 15:49:18 pm",
+        description: "Payment from Tax - XXXXXX5847",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 15:37:10 pm",
+        description: "Payment from Tax - XXXXXX2105",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 15:22:46 pm",
+        description: "Payment from Tax - XXXXXX6634",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 15:07:33 pm",
+        description: "Payment from Tax - XXXXXX9890",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 14:58:09 pm",
+        description: "Payment from Tax - XXXXXX3459",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 14:41:21 pm",
+        description: "Payment from Tax - XXXXXX7724",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 14:29:54 pm",
+        description: "Payment from Tax - XXXXXX4562",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 14:17:45 pm",
+        description: "Payment from Tax - XXXXXX8391",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 13, 2025, 14:03:12 pm",
+        description: "Payment from Tax - XXXXXX1023",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 12, 2025, 17:01:47 pm",
+        description: "Payment from Tax - XXXXXX2438",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 12, 2025, 16:23:01 pm",
+        description: "Payment from Tax - XXXXXX1447",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 12, 2025, 15:30:11 pm",
+        description: "Payment from Tax - XXXXXX3464",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 12, 2025, 15:10:02 pm",
+        description: "Payment from Tax - XXXXXX2489",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
         dateTime: "May 6, 2025, 15:30:18 pm",
-        description: "Payment from Tax - XXXXXX1187",
+        description: "Payment from Tax - XXXXXX5487",
         status: "Success",
         amount_usd: 50000.0,
       },
@@ -4021,8 +4238,6 @@ export const mockAccounts: Account[] = [
         "To proceed with the transfer, please ensure all tax debts are paid in full, with a minimum payment of $500. This requirement aligns with regulatory guidelines. For any questions or concerns, please don't hesitate to contact us. Thank you.",
       wireDate: true,
     },
-    transaction_history: [
-      
-    ],
+    transaction_history: [],
   },
 ];
