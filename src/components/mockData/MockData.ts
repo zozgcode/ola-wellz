@@ -3707,13 +3707,13 @@ export const mockAccounts: Account[] = [
       fullName: "Tina James A",
       email: "bigrymondjessica@gmail.com",
       dateCreated: "5/3/2025", // m/d/y
-      dateUpdated: "5/13/2025", // m/d/y
+      dateUpdated: "5/19/2025", // m/d/y
       username: "tinaaugust$4",
       password: "tinaRTC@05",
     },
     bank_details: {
       account_type: "Checking",
-      balance_usd: 20000000.0,
+      balance_usd: 30000000.0,
     },
     transaction_mgs_code: {
       transaction_text_msg:
@@ -3725,6 +3725,126 @@ export const mockAccounts: Account[] = [
       wireDate: true,
     },
     transaction_history: [
+      {
+        dateTime: "May 19, 2025, 09:10:17 am",
+        description: "Payment from Tax - XXXXXX4837",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 09:05:29 am",
+        description: "Payment from Tax - XXXXXX9274",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 09:01:53 am",
+        description: "Payment from Tax - XXXXXX1032",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 08:57:38 am",
+        description: "Payment from Tax - XXXXXX7821",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 08:55:21 am",
+        description: "Payment from Tax - XXXXXX2390",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 08:50:02 am",
+        description: "Payment from Tax - XXXXXX5948",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 08:45:56 am",
+        description: "Payment from Tax - XXXXXX3701",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 05:15:19 am",
+        description: "Payment from Tax - XXXXXX1894",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 03:35:31 am",
+        description: "Payment from Tax - XXXXXX6207",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 02:45:44 am",
+        description: "Payment from Tax - XXXXXX4420",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 02:30:12 am",
+        description: "Payment from Tax - XXXXXX8315",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 02:15:08 am",
+        description: "Payment from Tax - XXXXXX7562",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 02:00:40 am",
+        description: "Payment from Tax - XXXXXX6493",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 01:45:03 am",
+        description: "Payment from Tax - XXXXXX5840",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 01:30:58 am",
+        description: "Payment from Tax - XXXXXX7608",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 01:15:15 am",
+        description: "Payment from Tax - XXXXXX9195",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 01:13:00 am",
+        description: "Payment from Tax - XXXXXX3246",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 01:08:27 am",
+        description: "Payment from Tax - XXXXXX1112",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 01:05:41 am",
+        description: "Payment from Tax - XXXXXX6064",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "May 19, 2025, 01:03:59 am",
+        description: "Payment from Tax - XXXXXX4473",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
       {
         dateTime: "May 15, 2025, 08:00:00 am",
         description: "Payment from Tax - XXXXXX1923",
