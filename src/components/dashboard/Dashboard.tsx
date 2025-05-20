@@ -12,13 +12,13 @@ import Loader from "../Loader";
 import { BillIcon, CardIcon } from "../svgIcons";
 
 const getFormattedDate = () => {
-  const options: Intl.DateTimeFormatOptions = { 
-    weekday: 'long', 
-    month: 'long', 
-    day: 'numeric' 
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
   };
   const today = new Date();
-  return today.toLocaleDateString('en-US', options);
+  return today.toLocaleDateString("en-US", options);
 };
 
 export default function Dashboard() {
@@ -68,38 +68,93 @@ export default function Dashboard() {
           </span>
         </div>
         <div className="px-[16px] mb-4">
-          <div className="border flex flex-col gap-6 bg-[#d71e28] text-white p-4 rounded-lg">
-            <div className="flex items-center justify-between">
-              <span className="text-[14px] flex items-center gap-1">
-                Available balance
-                {hideBalance ? (
-                  <FiEyeOff onClick={toggleShowBalance} />
-                ) : (
-                  <FiEye onClick={toggleHideBalance} />
-                )}
-              </span>
-              <Link
-                href="/dashboard/transactions"
-                className="text-[14px] flex items-center gap-1"
-              >
-                <span>Transaction History</span>{" "}
-                <IoIosArrowForward className="relative top-[2px]" />
-              </Link>
+          {user.bank_details.saving_balance_usd ? (
+            <div className="flex flex-col justify-between gap-4 bg-[#d71e28] text-white p-4 rounded-lg">
+              <div className="flex justify-between gap-6">
+                <div className="flex flex-col">
+                  <span className="text-[14px] flex items-center gap-1">
+                    Current Balance
+                    {hideBalance ? (
+                      <FiEyeOff onClick={toggleShowBalance} />
+                    ) : (
+                      <FiEye onClick={toggleHideBalance} />
+                    )}
+                  </span>
+
+                  <span className="font-[400] text-[20px] mt-1">
+                    {hideBalance
+                      ? "******"
+                      : `${formatCurrency(user.bank_details.balance_usd)}`}
+                  </span>
+                </div>
+                <div className="flex flex-col gap-5">
+                  <Link
+                    href="/dashboard/transactions"
+                    className="text-[14px] flex items-center gap-1"
+                  >
+                    <span>Transaction History</span>{" "}
+                    <IoIosArrowForward className="relative top-[2px]" />
+                  </Link>
+                </div>
+              </div>
+              <hr className="border border-[#f3525a]" />
+              <div className="flex justify-between gap-6">
+                <div className="">
+                  <span className="text-[14px] flex items-center gap-1">
+                    Saving Balance
+                  </span>
+                  <span className="font-[400] text-[20px] mt-1">
+                    {hideBalance
+                      ? "******"
+                      : formatCurrency(
+                          user.bank_details.saving_balance_usd ?? 0
+                        )}
+                  </span>{" "}
+                </div>
+                <div className="flex flex-col gap-5">
+                  <Link
+                    href="/dashboard/transfer"
+                    className="p-[5px_20px] flex rounded-full bg-white text-[#d71e28] text-[14px]"
+                  >
+                    Send money
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center justify-between">
-              <span className="font-[400] text-[20px]">
-                {hideBalance
-                  ? "******"
-                  : `${formatCurrency(user.bank_details.balance_usd)}`}
-              </span>
-              <Link
-                href="/dashboard/transfer"
-                className="p-[5px_20px] rounded-full bg-white text-[#d71e28] text-[14px]"
-              >
-                Send money
-              </Link>
+          ) : (
+            <div className="border flex flex-col gap-6 bg-[#d71e28] text-white p-4 rounded-lg">
+              <div className="flex items-center justify-between">
+                <span className="text-[14px] flex items-center gap-1">
+                  Available balance
+                  {hideBalance ? (
+                    <FiEyeOff onClick={toggleShowBalance} />
+                  ) : (
+                    <FiEye onClick={toggleHideBalance} />
+                  )}
+                </span>
+                <Link
+                  href="/dashboard/transactions"
+                  className="text-[14px] flex items-center gap-1"
+                >
+                  <span>Transaction History</span>{" "}
+                  <IoIosArrowForward className="relative top-[2px]" />
+                </Link>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="font-[400] text-[20px]">
+                  {hideBalance
+                    ? "******"
+                    : `${formatCurrency(user.bank_details.balance_usd)}`}
+                </span>
+                <Link
+                  href="/dashboard/transfer"
+                  className="p-[5px_20px] rounded-full bg-white text-[#d71e28] text-[14px]"
+                >
+                  Send money
+                </Link>
+              </div>
             </div>
-          </div>
+          )}
         </div>
         <div className="p-[16px] hidden border py-8">
           <div className="flex items-center justify-center gap-3">

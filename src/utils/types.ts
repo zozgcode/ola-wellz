@@ -7,7 +7,6 @@ export interface Account {
     mobileNumber?: string;
     profileImgUrl?: string;
     nickName?: string;
-    gender?: string;
     email?: string;
     jointNames?: string;
     dateCreated?: string;
