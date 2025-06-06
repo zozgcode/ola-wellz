@@ -4360,7 +4360,7 @@ export const mockAccounts: Account[] = [
     transaction_history: [],
   },
   {
-    account_id: "ACC030",
+    account_id: "ACC031",
     holder: {
       fullName: "Sharon Hawley",
       profileImgUrl: "",
@@ -4863,6 +4863,62 @@ export const mockAccounts: Account[] = [
         description: "Transfer to Sharon Hawley - XXXXXX1876",
         status: "Success",
         amount_usd: -2000.0,
+      },
+    ],
+  },
+  {
+    account_id: "ACC032",
+    holder: {
+      fullName: "Alex Thomas Jr",
+      profileImgUrl: "",
+      email: "a*@gmail.com",
+      dateCreated: "6/6/2025", // m/d/y
+      username: "Alexthomas44",
+      password: "Alexlovesharon",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 2790000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "May 25, 2025",
+        description: "Transfer from Secretary of treasure United States - XXXXXX5834",
+        status: "Success",
+        amount_usd: 1200000.0,
+      },
+      {
+        dateTime: "April 14, 2025",
+        description: "Transfer from Martins Luther - XXXXXX7217",
+        status: "Success",
+        amount_usd: 1000000.0,
+      },
+      {
+        dateTime: "February 22, 2025",
+        description: "Transfer from Orchid Investment ROI - XXXXXX1823",
+        status: "Success",
+        amount_usd: 40000.0,
+      },
+      {
+        dateTime: "January 7, 2025",
+        description: "Transfer from Danny Williams - XXXXXX3864",
+        status: "Success",
+        amount_usd: 300000.0,
+      },
+      {
+        dateTime: "December 26, 2024",
+        description: "Transfer from Secretary of tresure United States - XXXXXX4547",
+        status: "Success",
+        amount_usd: 250000.0,
       },
     ],
   },
