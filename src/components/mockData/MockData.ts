@@ -4922,4 +4922,60 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC033",
+    holder: {
+      fullName: "Pablito Arroyo Tamio",
+      profileImgUrl: "",
+      email: "p*@gmail.com",
+      dateCreated: "6/6/2025", // m/d/y
+      username: "p",
+      password: "p",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 6400000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "December 18, 2024",
+        description: "Transfer from Goldmine Company Ltd - XXXXXX5834",
+        status: "Success",
+        amount_usd: 640000.0,
+      },
+      {
+        dateTime: "September 11, 2024",
+        description: "Transfer from Mensgold ltm - XXXXXX7217",
+        status: "Success",
+        amount_usd: 238000.0,
+      },
+      {
+        dateTime: "July 22, 2024",
+        description: "Transfer from Orchid Investment ROI - XXXXXX1823",
+        status: "Success",
+        amount_usd: 40000.0,
+      },
+      {
+        dateTime: "May 7, 2024",
+        description: "Transfer from Danny Williams - XXXXXX3864",
+        status: "Success",
+        amount_usd: -300000.0,
+      },
+      {
+        dateTime: "April 26, 2024",
+        description: "Transfer from Secretary of tresure United States - XXXXXX4547",
+        status: "Success",
+        amount_usd: -250000.0,
+      },
+    ],
+  },
 ];
