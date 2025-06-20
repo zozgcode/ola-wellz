@@ -21,6 +21,12 @@ export const listBks = [
     logo: "https://i.imgur.com/Lz9cyNI.jpeg",
   },
   {
+    id: 438437847,
+    name: "Tremont First National Bank",
+    // resize: true,
+    logo: "https://i.imgur.com/xBd4Uji.jpeg",
+  },
+  {
     id: 5,
     name: "U.S. Bank",
     logo: "https://i.imgur.com/p5A3hR7.jpeg",

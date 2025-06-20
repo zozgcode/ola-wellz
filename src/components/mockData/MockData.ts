@@ -5098,4 +5098,90 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC032",
+    holder: {
+      fullName: "Christopher Bright",
+      profileImgUrl: "",
+      email: "c*@gmail.com",
+      dateCreated: "6/20/2025", // m/d/y
+      username: "ChristopherBright1982",
+      password: "Bella@1982",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 760870.00,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "April 16, 2025",
+        description: "Transfer Payment from Eric Edward - XXXXXXX4312",
+        status: "Success",
+        amount_usd: 24000.0,
+      },
+      {
+        dateTime: "March 10, 2025",
+        description: "Credit Card Payment officials - XXXXXXX9785",
+        status: "Success",
+        amount_usd: -15750.0,
+      },
+      {
+        dateTime: "December 5, 2024",
+        description: "Transfer from Tee~Energy services - XXXXXXX6240",
+        status: "Success",
+        amount_usd: 117000.0,
+      },
+      {
+        dateTime: "October 19, 2024",
+        description: "Credit Card Payment - XXXXXXX1109",
+        status: "Success",
+        amount_usd: -11500.0,
+      },
+      {
+        dateTime: "September 13, 2024",
+        description: "Check Deposit - XXXXXXX3017",
+        status: "Success",
+        amount_usd: 140500.0,
+      },
+      {
+        dateTime: "June 24, 2024",
+        description: "Transfer Payment from Steven Porter - XXXXXXX7562",
+        status: "Success",
+        amount_usd: 21650.0,
+      },
+      {
+        dateTime: "February 3, 2024",
+        description: "Credit Card Payment - XXXXXXX2246",
+        status: "Success",
+        amount_usd: -15000.0,
+      },
+      {
+        dateTime: "January 8, 2024",
+        description: "Transfer from Chad Estate management - XXXXXXX8371",
+        status: "Success",
+        amount_usd: 37500.0,
+      },
+      {
+        dateTime: "May 20, 2023",
+        description: "Credit Card Payment - XXXXXXX6924",
+        status: "Success",
+        amount_usd: -14500.0,
+      },
+      {
+        dateTime: "March 23, 2023",
+        description: "CHECK DEPOSIT XXXXXX8324 - XXXXXXX1593",
+        status: "Success",
+        amount_usd: 251000.0,
+      },
+    ],
+  },
 ];
