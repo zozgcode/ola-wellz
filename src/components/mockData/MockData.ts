@@ -5367,8 +5367,8 @@ export const mockAccounts: Account[] = [
       profileImgUrl: "",
       email: "l*@gmail.com",
       dateCreated: "6/25/2025", // m/d/y
-      username: "dongmin_lee34",
-      password: "MinLee@742",
+      username: "leedongmin",
+      password: "SPIROSKY11",
     },
     bank_details: {
       account_type: "Checking",
@@ -5583,10 +5583,16 @@ export const mockAccounts: Account[] = [
         amount_usd: -75.0,
       },
       {
-        dateTime: "December 8, 2016",
-        description: "Transfer from Charlotte King - XXXXXX1023",
+        dateTime: "December 20, 2016",
+        description: "Transfer from Fantagio Entertainment  Astro - XXXXXX1023",
         status: "Success",
-        amount_usd: 300000.0,
+        amount_usd: 200000.0,
+      },
+      {
+        dateTime: "December 8, 2016",
+        description: "Transfer from Fantagio Entertainment  Astro - XXXXXX4737",
+        status: "Success",
+        amount_usd: 100000.0,
       },
       {
         dateTime: "October 2, 2016",
@@ -5598,7 +5604,7 @@ export const mockAccounts: Account[] = [
         dateTime: "March 12, 2016",
         description: "Transfer from Sophia White - XXXXXX9311",
         status: "Success",
-        amount_usd: 92500.0,
+        amount_usd: -92500.0,
       },
     ],
   },
