@@ -5394,7 +5394,7 @@ export const mockAccounts: Account[] = [
         dateTime: "June 26, 2025",
         description: "Transfer from Fantiago Astro - XXXXXX9343",
         status: "Success",
-        amount_usd: 50000.0,
+        amount_usd: 500000.0,
       },
       {
         dateTime: "June 24, 2025",
