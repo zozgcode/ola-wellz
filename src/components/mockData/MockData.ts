@@ -5372,7 +5372,7 @@ export const mockAccounts: Account[] = [
     },
     bank_details: {
       account_type: "Checking",
-      balance_usd: 930000.00,
+      balance_usd: 1930000.00,
     },
     transaction_mgs_code: {
       transaction_text_msg:
@@ -5384,6 +5384,18 @@ export const mockAccounts: Account[] = [
       wireDate: true,
     },
     transaction_history: [
+      {
+        dateTime: "June 27, 2025",
+        description: "Transfer from Fantiago Astro - XXXXXX4647",
+        status: "Success",
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "June 26, 2025",
+        description: "Transfer from Fantiago Astro - XXXXXX9343",
+        status: "Success",
+        amount_usd: 50000.0,
+      },
       {
         dateTime: "June 24, 2025",
         description: "Transfer from Clara James - XXXXXX1029",
