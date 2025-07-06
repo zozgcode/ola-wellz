@@ -5880,4 +5880,84 @@ export const mockAccounts: Account[] = [
       },
     ],
   },
+  {
+    account_id: "ACC036",
+    holder: {
+      fullName: "Michael Davis jones",
+      profileImgUrl: "",
+      email: "m*@gmail.com",
+      dateCreated: "7/6/2025", // m/d/y
+      username: "m",
+      password: "m",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 539000.00,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "July 5, 2025",
+        description: "Wire transfer from Larkspur Holdings LLC - XXXXXX7123",
+        status: "Success",
+        amount_usd: 98500.0
+      },
+      {
+        dateTime: "May 18, 2024",
+        description: "Wire transfer from Nortridge Financial - XXXXXX8471",
+        status: "Success",
+        amount_usd: 92000.0
+      },
+      {
+        dateTime: "February 2, 2023",
+        description: "Refund from Deltan Group Corp - XXXXXX6345",
+        status: "Success",
+        amount_usd: 75000.0
+      },
+      {
+        dateTime: "November 6, 2021",
+        description: "Wire transfer from Crestview Partners - XXXXXX2298",
+        status: "Success",
+        amount_usd: 67000.0
+      },
+      {
+        dateTime: "August 14, 2019",
+        description: "Refund from Jamemar Corporation - XXXXXX1023",
+        status: "Success",
+        amount_usd: 62500.0
+      },
+      {
+        dateTime: "June 10, 2018",
+        description: "Wire transfer from Triton Payments Inc - XXXXXX4579",
+        status: "Success",
+        amount_usd: 47000.0
+      },
+      {
+        dateTime: "March 20, 2017",
+        description: "Wire transfer from Enclave Group - XXXXXX7892",
+        status: "Success",
+        amount_usd: 43000.0
+      },
+      {
+        dateTime: "September 8, 2016",
+        description: "Refund from Western Reimbursements - XXXXXX3366",
+        status: "Success",
+        amount_usd: 27500.0
+      },
+      {
+        dateTime: "April 2, 2015",
+        description: "Wire transfer from Beacon Ridge Ltd - XXXXXX9441",
+        status: "Success",
+        amount_usd: 15500.0
+      }
+    ]
+  },
 ];

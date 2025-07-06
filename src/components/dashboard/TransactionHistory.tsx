@@ -10,14 +10,18 @@ interface TransactionHistoryProps {
   hideBalance: boolean;
 }
 
-const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user, hideBalance }) => {
+const TransactionHistory: React.FC<TransactionHistoryProps> = ({
+  user,
+  hideBalance,
+}) => {
   const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
 
-  const hasTransactions = user.transaction_history && user.transaction_history.length > 0;
+  const hasTransactions =
+    user.transaction_history && user.transaction_history.length > 0;
   const transactionsToShow = showMore
     ? user.transaction_history
     : user.transaction_history.slice(0, 5);
@@ -40,7 +44,10 @@ const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user, hideBalan
         <div className="mt-[10px]">
           {hasTransactions ? (
             transactionsToShow.map((transaction: Transaction) => (
-              <div key={transaction.transaction_id} className="flex justify-between py-3">
+              <div
+                key={transaction.transaction_id}
+                className="flex justify-between py-3"
+              >
                 <div className="flex gap-2 text-gray-800">
                   <button className="border-none flex items-center justify-center outline-none rounded-full w-[35px] h-[35px] bg-[#d71e28]/10">
                     <HiArrowDown
@@ -53,7 +60,9 @@ const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user, hideBalan
                     <span className="text-[14px] uppercase font-[600] w-[250px] sm:max-w-full">
                       {transaction.description}
                     </span>
-                    <span className="text-[10px] font-medium">{transaction.dateTime}</span>
+                    <span className="text-[10px] font-medium">
+                      {transaction.dateTime}
+                    </span>
                   </div>
                 </div>
                 <div className="flex flex-col gap-1 text-right">
@@ -77,7 +86,9 @@ const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user, hideBalan
               </div>
             ))
           ) : (
-            <p className="text-sm text-gray-500 italic py-4">No transactions yet.</p>
+            <p className="text-sm text-gray-500 italic py-4">
+              No transactions yet.
+            </p>
           )}
         </div>
       </div>
