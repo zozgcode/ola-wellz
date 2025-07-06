@@ -5906,57 +5906,63 @@ export const mockAccounts: Account[] = [
     transaction_history: [
       {
         dateTime: "July 5, 2025",
-        description: "Wire transfer from Larkspur Holdings LLC - XXXXXX7123",
+        description: "Wire transfer from Larkspur Holdings LLC – #LH712TX",
         status: "Success",
         amount_usd: 98500.0
       },
       {
         dateTime: "May 18, 2024",
-        description: "Wire transfer from Nortridge Financial - XXXXXX8471",
+        description: "Wire transfer from Nortridge Financial – #NF847TX",
         status: "Success",
         amount_usd: 92000.0
       },
       {
         dateTime: "February 2, 2023",
-        description: "Refund from Deltan Group Corp - XXXXXX6345",
+        description: "Refund from Deltan Group Corp – #DG634TX",
         status: "Success",
         amount_usd: 75000.0
       },
       {
         dateTime: "November 6, 2021",
-        description: "Wire transfer from Crestview Partners - XXXXXX2298",
+        description: "Wire transfer from Crestview Partners – #CP229TX",
         status: "Success",
         amount_usd: 67000.0
       },
       {
         dateTime: "August 14, 2019",
-        description: "Refund from Jamemar Corporation - XXXXXX1023",
+        description: "Refund from Jamemar Corporation – #JM102TX",
         status: "Success",
         amount_usd: 62500.0
       },
       {
         dateTime: "June 10, 2018",
-        description: "Wire transfer from Triton Payments Inc - XXXXXX4579",
+        description: "Wire transfer from Triton Payments Inc – #TP457TX",
         status: "Success",
         amount_usd: 47000.0
       },
       {
         dateTime: "March 20, 2017",
-        description: "Wire transfer from Enclave Group - XXXXXX7892",
+        description: "Wire transfer from Enclave Group – #EG789TX",
         status: "Success",
         amount_usd: 43000.0
       },
       {
         dateTime: "September 8, 2016",
-        description: "Refund from Western Reimbursements - XXXXXX3366",
+        description: "Refund from Western Reimbursements – #WR336TX",
         status: "Success",
         amount_usd: 27500.0
       },
       {
-        dateTime: "April 2, 2015",
-        description: "Wire transfer from Beacon Ridge Ltd - XXXXXX9441",
+        dateTime: "April 22, 2015",
+        description: "Wire transfer from Larkspur Holdings LLC, Q2 service reimbursement – #LS122TX",
         status: "Success",
-        amount_usd: 15500.0
+        amount_usd: 12375.0
+      },
+      {
+        dateTime: "March 6, 2015",
+        description: "Refund from Jamemar Corporation, check payment – #JM9450TX",
+        status: "Success",
+        amount_usd: 9450.0
       }
     ]
   },
