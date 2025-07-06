@@ -5887,8 +5887,8 @@ export const mockAccounts: Account[] = [
       profileImgUrl: "",
       email: "m*@gmail.com",
       dateCreated: "7/6/2025", // m/d/y
-      username: "m",
-      password: "m",
+      username: "dadloveava",
+      password: "Michael2001",
     },
     bank_details: {
       account_type: "Checking",
