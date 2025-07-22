@@ -5966,4 +5966,240 @@ export const mockAccounts: Account[] = [
       }
     ]
   },
+  {
+    account_id: "ACC037",
+    holder: {
+      fullName: "John Benedict ",
+      profileImgUrl: "",
+      email: "j*@gmail.com",
+      dateCreated: "7/22/2025", // m/d/y
+      username: "Toolmann",
+      password: "Delight@me4u",
+    },
+    bank_details: {
+      account_type: "Checking",
+      balance_usd: 800501.00,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "July 21, 2025",
+        description: "Transfer from Ava Schmidt - XXXXXX1029",
+        status: "Success",
+        amount_usd: 230000.0,
+      },
+      {
+        dateTime: "July 18, 2025",
+        description: "Transfer fee - XXXXXX4499",
+        status: "Success",
+        amount_usd: -92.0,
+      },
+      {
+        dateTime: "July 12, 2025",
+        description: "Transfer to Liam Carter - XXXXXX5612",
+        status: "Success",
+        amount_usd: -48000.0,
+      },
+      {
+        dateTime: "July 5, 2025",
+        description: "Transfer from Mason Lee - XXXXXX7890",
+        status: "Success",
+        amount_usd: 176000.0,
+      },
+      {
+        dateTime: "June 25, 2025",
+        description: "Transfer from Mia Brooks - XXXXXX6111",
+        status: "Success",
+        amount_usd: 102000.0,
+      },
+      {
+        dateTime: "June 18, 2025",
+        description: "VAT Fee - XXXXXX3345",
+        status: "Success",
+        amount_usd: -62.5,
+      },
+      {
+        dateTime: "June 11, 2025",
+        description: "Transfer to Ava Wilson - XXXXXX2120",
+        status: "Success",
+        amount_usd: -37000.0,
+      },
+      {
+        dateTime: "June 3, 2025",
+        description: "Transfer from Jacob Smith - XXXXXX9120",
+        status: "Success",
+        amount_usd: 194000.0,
+      },
+      {
+        dateTime: "May 28, 2025",
+        description: "Transfer to Emma Johnson - XXXXXX1080",
+        status: "Success",
+        amount_usd: -39000.0,
+      },
+      {
+        dateTime: "May 20, 2025",
+        description: "Transfer from Ethan Johnson - XXXXXX3491",
+        status: "Success",
+        amount_usd: 129000.0,
+      },
+      {
+        dateTime: "May 12, 2025",
+        description: "Transfer fee - XXXXXX4110",
+        status: "Success",
+        amount_usd: -88.0,
+      },
+      {
+        dateTime: "May 4, 2025",
+        description: "Transfer to Olivia Smith - XXXXXX2019",
+        status: "Success",
+        amount_usd: -26000.0,
+      },
+      {
+        dateTime: "April 22, 2025",
+        description: "Transfer from Benjamin Clark - XXXXXX7623",
+        status: "Success",
+        amount_usd: 218000.0,
+      },
+      {
+        dateTime: "April 15, 2025",
+        description: "Transfer to Noah Taylor - XXXXXX8647",
+        status: "Success",
+        amount_usd: -3200.0,
+      },
+      {
+        dateTime: "April 8, 2025",
+        description: "Transfer from Amelia Müller - XXXXXX4730",
+        status: "Success",
+        amount_usd: 24800.0,
+      },
+      {
+        dateTime: "March 27, 2025",
+        description: "Transfer fee - XXXXXX3563",
+        status: "Success",
+        amount_usd: -105.2,
+      },
+      {
+        dateTime: "March 19, 2025",
+        description: "Transfer from Henry Baker - XXXXXX6667",
+        status: "Success",
+        amount_usd: 319000.0,
+      },
+      {
+        dateTime: "March 10, 2025",
+        description: "Transfer to Ava Schmidt - XXXXXX9072",
+        status: "Success",
+        amount_usd: -14700.0,
+      },
+      {
+        dateTime: "March 2, 2025",
+        description: "Transfer from Grace Evans - XXXXXX6366",
+        status: "Success",
+        amount_usd: 116000.0,
+      },
+      {
+        dateTime: "February 22, 2025",
+        description: "Transfer to Julian Weber - XXXXXX3449",
+        status: "Success",
+        amount_usd: -253000.0,
+      },
+      {
+        dateTime: "February 14, 2025",
+        description: "Transfer from Charlotte Green - XXXXXX4552",
+        status: "Success",
+        amount_usd: 96000.0,
+      },
+      {
+        dateTime: "February 6, 2025",
+        description: "Transfer to Jack Thompson - XXXXXX7298",
+        status: "Success",
+        amount_usd: -11800.0,
+      },
+      {
+        dateTime: "February 1, 2025",
+        description: "Transfer fee - XXXXXX3001",
+        status: "Success",
+        amount_usd: -84.0,
+      },
+      {
+        dateTime: "January 25, 2025",
+        description: "Transfer from Isabella Dubois - XXXXXX3155",
+        status: "Success",
+        amount_usd: 34000.0,
+      },
+      {
+        dateTime: "January 16, 2025",
+        description: "Transfer to Liam Martin - XXXXXX1110",
+        status: "Success",
+        amount_usd: -9500.0,
+      },
+      {
+        dateTime: "January 8, 2025",
+        description: "Transfer from Nathan Gray - XXXXXX1746",
+        status: "Success",
+        amount_usd: 421000.0,
+      },
+      {
+        dateTime: "December 19, 2024",
+        description: "Transfer from Olivia Park - XXXXXX4301",
+        status: "Success",
+        amount_usd: 58000.0,
+      },
+      {
+        dateTime: "December 10, 2024",
+        description: "VAT Fee - XXXXXX8111",
+        status: "Success",
+        amount_usd: -88.0,
+      },
+      {
+        dateTime: "December 2, 2024",
+        description: "Transfer to William Harris - XXXXXX5598",
+        status: "Success",
+        amount_usd: -19000.0,
+      },
+      {
+        dateTime: "November 21, 2024",
+        description: "Transfer from Chloe Davis - XXXXXX2004",
+        status: "Success",
+        amount_usd: 39000.0,
+      },
+      {
+        dateTime: "November 13, 2024",
+        description: "Transfer to Ethan Wilson - XXXXXX9435",
+        status: "Success",
+        amount_usd: -46000.0,
+      },
+      {
+        dateTime: "November 4, 2024",
+        description: "Transfer from Lucas Brown - XXXXXX3321",
+        status: "Success",
+        amount_usd: 78000.0,
+      },
+      {
+        dateTime: "October 24, 2024",
+        description: "Transfer from Emily Wagner - XXXXXX9812",
+        status: "Success",
+        amount_usd: 59000.0,
+      },
+      {
+        dateTime: "October 15, 2024",
+        description: "Transfer from Sophia Green - XXXXXX1273",
+        status: "Success",
+        amount_usd: 47000.0,
+      },
+      {
+        dateTime: "October 6, 2024",
+        description: "Transfer to Daniel Lee - XXXXXX6720",
+        status: "Success",
+        amount_usd: -23500.0,
+      }
+    ]
+  },
 ];
