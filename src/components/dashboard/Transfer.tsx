@@ -18,6 +18,7 @@ interface Bks {
 
 interface FormErrors {
   routingNumber?: string;
+  accountNumber?: string;
   selectedBank?: string;
   amount?: string;
   transCode?: string;
@@ -29,6 +30,7 @@ export default function Transfer() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     routingNumber: "",
+    accountNumber: "",
     selectedBank: null as Bks | null,
     amount: "",
     remark: "",
@@ -66,14 +68,6 @@ export default function Transfer() {
         const enteredAmount = parseFloat(formData.amount);
         if (enteredAmount > user.bank_details.balance_usd) {
           setErrors({ amount: "Insufficient balance" });
-          return;
-        }
-
-        // ✅ Safely check transaction code existence
-        const transactionCode =
-          user.transaction_mgs_code?.transaction_code?.trim();
-        if (!transactionCode) {
-          setStep(4); // Skip to step 4 directly if no transaction code is required
           return;
         }
       }
@@ -115,17 +109,42 @@ export default function Transfer() {
 
   const validateForm = () => {
     const errors: FormErrors = {};
+    const isAccountNumber = !!user?.bank_details.isAccountNumber;
+
     if (step === 1) {
       if (!formData.routingNumber) {
         errors.routingNumber = "Routing number is required";
+      } else if (
+        formData.routingNumber.length < 9 ||
+        formData.routingNumber.length > 12
+      ) {
+        errors.routingNumber = "Routing number must be between 9 and 12 digits";
       }
+
+      if (isAccountNumber) {
+        if (!formData.accountNumber) {
+          errors.accountNumber = "Account number is required";
+        } else if (
+          formData.accountNumber.length < 8 ||
+          formData.accountNumber.length > 12
+        ) {
+          errors.accountNumber =
+            "Account number must be between 8 and 12 digits";
+        }
+      }
+
       if (!formData.selectedBank)
         errors.selectedBank = "Bank selection is required";
     } else if (step === 2) {
       if (!formData.amount) errors.amount = "Amount is required";
     } else if (step === 3) {
-      if (formData.transCode !== user?.transaction_mgs_code.transaction_code)
+      // Only validate transaction code if it exists
+      if (
+        user?.transaction_mgs_code.transaction_code &&
+        formData.transCode !== user.transaction_mgs_code.transaction_code
+      ) {
         errors.transCode = "Incorrect transaction code";
+      }
       // if (formData.transCode !== generatedCode) errors.transCode = "Incorrect transaction code";
     }
     return errors;
@@ -155,8 +174,29 @@ export default function Transfer() {
                   className="w-full p-3 my-2 mb-2 min-h-[60px] bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
                 />
                 {errors.routingNumber && (
-                  <p className="text-red-500 text-sm">{errors.routingNumber}</p>
+                  <p className="text-red-500 text-sm mb-2">
+                    {errors.routingNumber}
+                  </p>
                 )}
+                {user.bank_details.isAccountNumber && (
+                  <>
+                    <input
+                      type="number"
+                      name="accountNumber"
+                      value={formData.accountNumber}
+                      onChange={handleChange}
+                      placeholder="Account Number"
+                      required
+                      className="w-full p-3 mb-2 min-h-[60px] bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
+                    />
+                    {errors.accountNumber && (
+                      <p className="text-red-500 text-sm mb-2">
+                        {errors.accountNumber}
+                      </p>
+                    )}
+                  </>
+                )}
+
                 <SelectBks
                   selectedBank={formData.selectedBank}
                   setSelectedBank={(bks) =>
@@ -164,7 +204,9 @@ export default function Transfer() {
                   }
                 />
                 {errors.selectedBank && (
-                  <p className="text-red-500 text-sm">{errors.selectedBank}</p>
+                  <p className="text-red-500 text-sm mt-2">
+                    {errors.selectedBank}
+                  </p>
                 )}
               </div>
               <div className="flex items-center justify-between gap-20">
@@ -254,59 +296,63 @@ export default function Transfer() {
             </div>
           )}
 
-          {step === 3 &&
-            user.transaction_mgs_code?.transaction_code?.trim() !== "" && (
-              <div>
-                <p className="text-[14px] text-center text-zinc-700">
-                  You are about to transfer{" "}
-                  {formatCurrency(Number(formData.amount))} to&nbsp;
-                  <span className="uppercase font-[600]">
-                    {formData.selectedBank?.name}
-                  </span>
-                  &nbsp;from your&nbsp;
-                  <span className="font-[500]">CHECKING ACCOUNT</span>
-                  <br />
-                </p>
-                <h2 className="text-[#2e2e2e] text-lg hidden mb-4">
-                  Please input the code sent to you
-                </h2>
-                <p className="text-[14px] text-center text-zinc-700 my-2 mt-2">
-                  To continue, Please input the code sent to you
-                </p>
-                <div className="">
-                  <input
-                    type="number"
-                    name="transCode"
-                    value={formData.transCode}
-                    onChange={handleChange}
-                    placeholder="Input transaction code sent to you"
-                    required
-                    className="w-full p-3 my-2 mb-2 min-h-[60px] text-center bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
-                  />
-                  {loading
-                    ? ""
-                    : errors.transCode && (
-                        <p className="text-red-500 text-center text-sm">
-                          {errors.transCode}
-                        </p>
-                      )}
-                </div>
-                <div className="flex items-center justify-between gap-20">
-                  <Link
-                    href="/dashboard"
-                    className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
-                  >
-                    Cancel
-                  </Link>
-                  <button
-                    type="submit"
-                    className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
-                  >
-                    {loading ? "Loading..." : "Transfer"}
-                  </button>
-                </div>
+          {step === 3 && (
+            <div>
+              <p className="text-[14px] text-center text-zinc-700">
+                You are about to transfer{" "}
+                {formatCurrency(Number(formData.amount))} to&nbsp;
+                <span className="uppercase font-[600]">
+                  {formData.selectedBank?.name}
+                </span>
+                &nbsp;from your&nbsp;
+                <span className="font-[500]">CHECKING ACCOUNT</span>
+                <br />
+              </p>
+              <h2 className="text-[#2e2e2e] text-lg hidden mb-4">
+                Please input the code sent to you
+              </h2>
+              {user?.transaction_mgs_code.transaction_code && (
+                <>
+                  <p className="text-[14px] text-center text-zinc-700 my-2 mt-2">
+                    To continue, Please input the code sent to you
+                  </p>
+                  <div className="">
+                    <input
+                      type="number"
+                      name="transCode"
+                      value={formData.transCode}
+                      onChange={handleChange}
+                      placeholder="Input transaction code sent to you"
+                      // required
+                      className="w-full p-3 my-2 mb-2 min-h-[60px] text-center bg-[#f8f8f8] rounded-lg border-none text-[#2e2e2e] focus:outline-none"
+                    />
+                    {loading
+                      ? ""
+                      : errors.transCode && (
+                          <p className="text-red-500 text-center text-sm">
+                            {errors.transCode}
+                          </p>
+                        )}
+                  </div>
+                </>
+              )}
+
+              <div className="flex items-center justify-between gap-20">
+                <Link
+                  href="/dashboard"
+                  className="max-w-max flex items-center justify-center rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
+                >
+                  Cancel
+                </Link>
+                <button
+                  type="submit"
+                  className="w-full rounded-full mt-4 px-4 min-h-[50px] text-xl bg-[#d71e28] text-white"
+                >
+                  {loading ? "Loading..." : "Transfer"}
+                </button>
               </div>
-            )}
+            </div>
+          )}
 
           {step === 4 && (
             <Transition appear show={isOpen} as={Fragment}>
