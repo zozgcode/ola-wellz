@@ -6439,4 +6439,49 @@ export const mockAccounts: Account[] = [
       }
     ]
   },
+  {
+    account_id: "ACC039",
+    holder: {
+      fullName: "Hayley Pickford",
+      profileImgUrl: "",
+      email: "h*@gmail.com",
+      dateCreated: "7/27/2025", // m/d/y
+      username: "Hayley36",
+      password: "Pickford2@",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 24000.00,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team on help@thebybit.co for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "July 26, 2024",
+        description: "Deposit from coinbase - XXXXXX1029",
+        status: "Success",
+        amount_usd: 6100.0
+      },
+      {
+        dateTime: "July 26, 2024",
+        description: "Deposit from Bybit - XXXXXX2376",
+        status: "Success",
+        amount_usd: 13000.0
+      },
+      {
+        dateTime: "July 26, 2024",
+        description: "Deposit from Bybit - XXXXXX7354",
+        status: "Success",
+        amount_usd: 2500.0
+      },
+    ]
+  },
 ];
