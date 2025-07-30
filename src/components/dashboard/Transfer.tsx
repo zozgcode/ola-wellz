@@ -8,6 +8,7 @@ import { generateRandomCode } from "./generateRandomCode";
 import Link from "next/link";
 import Loader from "../Loader";
 import { Dialog, Transition } from "@headlessui/react";
+import { getInitials } from "../getInitials";
 // import { TelegramSendMessage } from "../TelegramSendMessage";
 
 interface Bks {
@@ -233,7 +234,7 @@ export default function Transfer() {
                 <span className="">Transfer From</span>
                 <div className="flex gap-2 mt-2">
                   <div className="rounded-lg flex items-center justify-center w-[35px] h-[35px] bg-[#d71e28] text-white">
-                    WF
+                    {getInitials(user.holder.fullName)}
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="uppercase">
