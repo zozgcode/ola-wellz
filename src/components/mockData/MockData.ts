@@ -6733,15 +6733,27 @@ export const mockAccounts: Account[] = [
     transaction_history: [
       {
         dateTime: "July 26, 2025",
-        description: "Transfer from chase - XXXXXX2347",
+        description: "Transfer from VistaNest Properties - XXXXXX2347",
         status: "Success",
-        amount_usd: 68000.0,
+        amount_usd: 500000.0,
       },
       {
-        dateTime: "July 18, 2025",
-        description: "Transfer fee - XXXXXX4499",
+        dateTime: "July 25, 2025",
+        description: "Transfer from Summit Housing Grp. - XXXXXX4499",
         status: "Success",
-        amount_usd: -92.0,
+        amount_usd: 500000.0,
+      },
+      {
+        dateTime: "July 20, 2025",
+        description: "VAT Fee - XXXXXX4673",
+        status: "Success",
+        amount_usd: -62.5
+      },
+      {
+        dateTime: "July 15, 2025",
+        description: "Transfer from chase - XXXXXX3644",
+        status: "Success",
+        amount_usd: 25000.0,
       },
       {
         dateTime: "July 12, 2025",
