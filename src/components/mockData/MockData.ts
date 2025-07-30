@@ -6650,4 +6650,61 @@ export const mockAccounts: Account[] = [
       }
     ]
   },
+  {
+    account_id: "ACC041",
+    holder: {
+      fullName: "Serenity Lomas",
+      mobileNumber: "+12185082322",
+      email: "beatrice**@gmail.com",
+      dateCreated: "7/30/2025", // m/d/y
+      username: "Serenity890",
+      password: "Serenity890",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 7057000.00,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "237832",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "June 17, 2022",
+        description: "Transfer from Edward Jona Lopez - XXXXXX2326",
+        status: "Success",
+        amount_usd: 1500000.0,
+      },
+      {
+        dateTime: "June 17, 2022",
+        description: "Transfer from Edward Jona Lopez - XXXXXX6533",
+        status: "Success",
+        amount_usd: 1450000.0,
+      },
+      {
+        dateTime: "June 17, 2022",
+        description: "Transfer from Edward Jona Lopez - XXXXXX3377",
+        status: "Success",
+        amount_usd: 1400000.0,
+      },
+      {
+        dateTime: "June 17, 2022",
+        description: "Transfer from Edward Jona Lopez - XXXXXX3564",
+        status: "Success",
+        amount_usd: 1350000.0,
+      },
+      {
+        dateTime: "June 17, 2022",
+        description: "Transfer from Edward Jona Lopez - XXXXXX3469",
+        status: "Success",
+        amount_usd: 1357000.0,
+      },
+    ]
+  },
 ];
