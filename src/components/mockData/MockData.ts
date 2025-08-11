@@ -4491,6 +4491,7 @@ export const mockAccounts: Account[] = [
     },
     bank_details: {
       account_type: "Checking",
+      isChecking: true,
       balance_usd: 500000000.0,
       saving_balance_usd: 500510000.0,
     },
@@ -6497,6 +6498,7 @@ export const mockAccounts: Account[] = [
     bank_details: {
       account_type: "Checking",
       isAccountNumber: true,
+      isChecking: true,
       balance_usd: 1357099.00,
       saving_balance_usd: 200000.00,
     },
@@ -6940,6 +6942,40 @@ export const mockAccounts: Account[] = [
         description: "Transfer from Apex Corp XXXXXX4567",
         status: "Success",
         amount_usd: 22500.0,
+      },
+    ]
+  },
+  {
+    account_id: "ACC043",
+    holder: {
+      fullName: "Reena Htoo",
+      email: "r*@gmail.com",
+      dateCreated: "8/11/2025", // m/d/y
+      username: "Reena2025",
+      password: "Htoo2025",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      isLedger: true,
+      balance_usd: 0.0,
+      ledger_balance_usd: 80000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "1212",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "August 11, 2025",
+        description: "Transfer from annual GRANT AID BY DOWC - XXXXXX2347",
+        status: "Success",
+        amount_usd: 80000.0,
       },
     ]
   },

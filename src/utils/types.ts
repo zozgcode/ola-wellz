@@ -23,7 +23,11 @@ export interface Account {
     swift_code?: string;
     account_type: string;
     balance_usd: number;
+    isChecking?: boolean;
+    isLedger?: boolean;
     saving_balance_usd?: number;
+    current_balance_usd?: number;
+    ledger_balance_usd?: number;
   };
   transaction_mgs_code: {
     transaction_text_msg?: string;
