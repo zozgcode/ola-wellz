@@ -3180,7 +3180,6 @@ export const mockAccounts: Account[] = [
         status: "Success",
         amount_usd: 20000.0,
       },
-
       {
         dateTime: "December 25, 2024",
         description: "Transfer from United Nation - XXXXXX2856",
@@ -3253,7 +3252,6 @@ export const mockAccounts: Account[] = [
         status: "Success",
         amount_usd: 20000.0,
       },
-
       {
         dateTime: "December 25, 2023",
         description: "Transfer from United Nation - XXXXXX4678",
@@ -6977,6 +6975,266 @@ export const mockAccounts: Account[] = [
         status: "Success",
         amount_usd: 80000.0,
       },
+    ]
+  },
+  {
+    account_id: "ACC044",
+    holder: {
+      fullName: "Alex Chris Earl",
+      email: "alexear*@gmail.com",
+      dateCreated: "8/12/2025", // m/d/y
+      username: "alexearl552",
+      password: "Vodafone1#",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 1256024.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "1212",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "August 13, 2025",
+        description: "Transfer from payroll - XXXXXX2347",
+        status: "Success",
+        amount_usd: 4267.0,
+      },
+      {
+        dateTime: "August 7, 2025",
+        description: "Transfer from Citybank - XXXXXX3456",
+        status: "Success",
+        amount_usd: 52000.0,
+      },
+      {
+        dateTime: "June 25, 2025",
+        description: "Transfer from Ava Schmidt - XXXXXX1029",
+        status: "Success",
+        amount_usd: 23000.0
+      },
+      {
+        dateTime: "June 19, 2025",
+        description: "Transfer fee - XXXXXX4499",
+        status: "Success",
+        amount_usd: -92.0
+      },
+      {
+        dateTime: "June 13, 2025",
+        description: "Transfer to Liam Carter - XXXXXX5612",
+        status: "Success",
+        amount_usd: -48000.0
+      },
+      {
+        dateTime: "June 6, 2025",
+        description: "Transfer from Mason Lee - XXXXXX7890",
+        status: "Success",
+        amount_usd: 176000.0
+      },
+      {
+        dateTime: "May 28, 2025",
+        description: "Transfer from Mia Brooks - XXXXXX6111",
+        status: "Success",
+        amount_usd: 10200.0
+      },
+      {
+        dateTime: "May 21, 2025",
+        description: "VAT Fee - XXXXXX3345",
+        status: "Success",
+        amount_usd: -62.5
+      },
+      {
+        dateTime: "May 14, 2025",
+        description: "Transfer to Ava Wilson - XXXXXX2120",
+        status: "Success",
+        amount_usd: -37000.0
+      },
+      {
+        dateTime: "May 6, 2025",
+        description: "Transfer from Jacob Smith - XXXXXX9120",
+        status: "Success",
+        amount_usd: 19400.0
+      },
+      {
+        dateTime: "April 30, 2025",
+        description: "Transfer to Emma Johnson - XXXXXX1080",
+        status: "Success",
+        amount_usd: -39000.0
+      },
+      {
+        dateTime: "April 22, 2025",
+        description: "Transfer from Ethan Johnson - XXXXXX3491",
+        status: "Success",
+        amount_usd: 129000.0
+      },
+      {
+        dateTime: "April 14, 2025",
+        description: "Transfer fee - XXXXXX4110",
+        status: "Success",
+        amount_usd: -88.0
+      },
+      {
+        dateTime: "April 6, 2025",
+        description: "Transfer to Olivia Smith - XXXXXX2019",
+        status: "Success",
+        amount_usd: -26000.0
+      },
+      {
+        dateTime: "March 25, 2025",
+        description: "Transfer from Benjamin Clark - XXXXXX7623",
+        status: "Success",
+        amount_usd: 21800.0
+      },
+      {
+        dateTime: "March 18, 2025",
+        description: "Transfer to Noah Taylor - XXXXXX8647",
+        status: "Success",
+        amount_usd: -3200.0
+      },
+      {
+        dateTime: "March 11, 2025",
+        description: "Transfer from Amelia Müller - XXXXXX4730",
+        status: "Success",
+        amount_usd: 24800.0
+      },
+      {
+        dateTime: "February 28, 2025",
+        description: "Transfer fee - XXXXXX3563",
+        status: "Success",
+        amount_usd: -105.2
+      },
+      {
+        dateTime: "February 20, 2025",
+        description: "Transfer from Henry Baker - XXXXXX6667",
+        status: "Success",
+        amount_usd: 31900.0
+      },
+      {
+        dateTime: "February 12, 2025",
+        description: "Transfer to Ava Schmidt - XXXXXX9072",
+        status: "Success",
+        amount_usd: -14700.0
+      },
+      {
+        dateTime: "February 4, 2025",
+        description: "Transfer from Grace Evans - XXXXXX6366",
+        status: "Success",
+        amount_usd: 116000.0
+      },
+      {
+        dateTime: "January 25, 2025",
+        description: "Transfer to Julian Weber - XXXXXX3449",
+        status: "Success",
+        amount_usd: -25300.0
+      },
+      {
+        dateTime: "January 17, 2025",
+        description: "Transfer from Charlotte Green - XXXXXX4552",
+        status: "Success",
+        amount_usd: 96000.0
+      },
+      {
+        dateTime: "January 9, 2025",
+        description: "Transfer to Jack Thompson - XXXXXX7298",
+        status: "Success",
+        amount_usd: -11800.0
+      },
+      {
+        dateTime: "January 3, 2025",
+        description: "Transfer fee - XXXXXX3001",
+        status: "Success",
+        amount_usd: -84.0
+      },
+      {
+        dateTime: "December 25, 2024",
+        description: "Transfer from Global Fund - XXXXXX2856",
+        status: "Success",
+        amount_usd: 17600.0
+      },
+      {
+        dateTime: "November 26, 2024",
+        description: "Transfer from Nova Relief Trust - XXXXXX4863",
+        status: "Success",
+        amount_usd: 820000.0
+      },
+      {
+        dateTime: "November 25, 2024",
+        description: "Transfer from Tesla - XXXXXX1384",
+        status: "Success",
+        amount_usd: 46000.0
+      },
+      {
+        dateTime: "November 22, 2024",
+        description: "VAT Fee - XXXXXX5632",
+        status: "Success",
+        amount_usd: -84.0
+      },
+      {
+        dateTime: "October 25, 2024",
+        description: "Transfer from Nova Relief Trust - XXXXXX7489",
+        status: "Success",
+        amount_usd: 20000.0
+      },
+      {
+        dateTime: "September 25, 2024",
+        description: "Transfer to Maria Lopez - XXXXXX3951",
+        status: "Success",
+        amount_usd: -18450.0
+      },
+      {
+        dateTime: "August 25, 2024",
+        description: "Transfer from Unity Grants - XXXXXX6297",
+        status: "Success",
+        amount_usd: 19700.0
+      },
+      {
+        dateTime: "July 25, 2024",
+        description: "Vat Fee - XXXXXX8712",
+        status: "Success",
+        amount_usd: -125.0
+      },
+      {
+        dateTime: "June 25, 2024",
+        description: "Transfer from David Kim - XXXXXX4208",
+        status: "Success",
+        amount_usd: 16800.0
+      },
+      {
+        dateTime: "May 25, 2024",
+        description: "Transfer from HopeBridge Network - XXXXXX1764",
+        status: "Success",
+        amount_usd: 20000.0
+      },
+      {
+        dateTime: "April 25, 2024",
+        description: "Vat Fee - XXXXXX9583",
+        status: "Success",
+        amount_usd: -103.0
+      },
+      {
+        dateTime: "March 25, 2024",
+        description: "Transfer from FutureReach Initiative - XXXXXX6125",
+        status: "Success",
+        amount_usd: 35000.0
+      },
+      {
+        dateTime: "February 25, 2024",
+        description: "Transfer from NewWorld Grants - XXXXXX8347",
+        status: "Success",
+        amount_usd: 14300.0
+      },
+      {
+        dateTime: "January 25, 2024",
+        description: "Transfer to AidSphere Group - XXXXXX1092",
+        status: "Success",
+        amount_usd: -12500.0
+      }
     ]
   },
 ];
