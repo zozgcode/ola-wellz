@@ -41,7 +41,7 @@ const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user, hideBalan
                     <HiArrowDown className={`${transaction.amount_usd < 0 ? 'rotate-180' : ''}`} />
                   </button>
                   <div className="flex flex-col gap-1 justify-between">
-                    <span className="text-[14px] uppercase font-[600] w-[240px] sm:max-w-full">{transaction.description}</span>
+                    <span className="text-[14px] uppercase font-[600] w-[150px] xxxs:w-[200px] xs:w-[250px] sm:max-w-full">{transaction.description}</span>
                     <span className="text-[10px] font-medium">{transaction.dateTime}</span>
                   </div>
                 </div>
