@@ -7497,4 +7497,206 @@ export const mockAccounts: Account[] = [
       }
     ]
   },
+  {
+    account_id: "ACC046",
+    holder: {
+      fullName: "Mark Jones",
+      email: "m*@gmail.com",
+      dateCreated: "8/15/2025", // m/d/y
+      username: "markjones89",
+      password: "SHANEP1890",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 70000000480.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "23782",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "July 23, 2023",
+        description: "Transfer from Bright Future - XXXXXX2347",
+        status: "Success",
+        amount_usd: 30000000000.00
+      },
+      {
+        dateTime: "July 23, 2023",
+        description: "vat fee",
+        status: "Success",
+        amount_usd: -40.00
+      },
+      {
+        dateTime: "July 8, 2023",
+        description: "Transfer from Citybank - XXXXXX3456",
+        status: "Success",
+        amount_usd: 10000000000.0
+      },
+      {
+        dateTime: "July 8, 2023",
+        description: "vat fee",
+        status: "Success",
+        amount_usd: -40.00
+      },
+      {
+        dateTime: "June 26, 2023",
+        description: "Transfer from Ava Schmidt - XXXXXX1029",
+        status: "Success",
+        amount_usd: 10000000000.0
+      },
+      {
+        dateTime: "June 26, 2023",
+        description: "vat fee",
+        status: "Success",
+        amount_usd: -40.00
+      },
+      {
+        dateTime: "June 14, 2023",
+        description: "Transfer from Liam Carter - XXXXXX5612",
+        status: "Success",
+        amount_usd: 10000000000.0
+      },
+      {
+        dateTime: "June 14, 2023",
+        description: "vat fee",
+        status: "Success",
+        amount_usd: -40.00
+      },
+      {
+        dateTime: "June 7, 2023",
+        description: "Transfer from Mason Lee - XXXXXX7890",
+        status: "Success",
+        amount_usd: 10000000000.0
+      },
+    ]
+  },
+  {
+    account_id: "ACC047",
+    holder: {
+      fullName: "Robert A Jameson",
+      email: "r*@gmail.com",
+      dateCreated: "8/15/2025", // m/d/y
+      username: "JamRob21",
+      password: "KylieRob",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 120000000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "23782",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "August 13, 2020",
+        description: "Transfer from payroll - XXXXXX2347",
+        status: "Success",
+        amount_usd: 87000.0,
+      },
+      {
+        dateTime: "August 7, 2020",
+        description: "Transfer from Citybank - XXXXXX3456",
+        status: "Success",
+        amount_usd: 35200.0,
+      },
+      {
+        dateTime: "July 18, 2020",
+        description: "Transfer to Olivia Bennett - XXXXXX8373",
+        status: "Success",
+        amount_usd: -35000.0,
+      },
+      {
+        dateTime: "June 25, 2020",
+        description: "Transfer from Ava Schmidt - XXXXXX1029",
+        status: "Success",
+        amount_usd: 85000.0
+      },
+      {
+        dateTime: "June 19, 2020",
+        description: "Transfer from Mason Carter - XXXXXX4499",
+        status: "Success",
+        amount_usd: 75450.0
+      },
+      {
+        dateTime: "June 13, 2020",
+        description: "Transfer to Liam Carter - XXXXXX5612",
+        status: "Success",
+        amount_usd: -48000.0
+      },
+      {
+        dateTime: "June 6, 2020",
+        description: "Transfer from Mason Lee - XXXXXX7890",
+        status: "Success",
+        amount_usd: 63000.0
+      },
+      {
+        dateTime: "May 28, 2020",
+        description: "Transfer from Mia Brooks - XXXXXX6111",
+        status: "Success",
+        amount_usd: 52700.0
+      },
+      {
+        dateTime: "May 14, 2020",
+        description: "Transfer to Ava Wilson - XXXXXX2120",
+        status: "Success",
+        amount_usd: -3700.0
+      },
+      {
+        dateTime: "May 6, 2020",
+        description: "Transfer from Jacob Smith - XXXXXX9120",
+        status: "Success",
+        amount_usd: 21040.0
+      },
+      {
+        dateTime: "April 30, 2020",
+        description: "Transfer to Emma Johnson - XXXXXX1080",
+        status: "Success",
+        amount_usd: -3900.0
+      },
+      {
+        dateTime: "April 22, 2019",
+        description: "Transfer from Ethan Johnson - XXXXXX3491",
+        status: "Success",
+        amount_usd: 29000.0
+      },
+      {
+        dateTime: "April 14, 2019",
+        description: "Transfer from Benjamin Foster - XXXXXX4110",
+        status: "Success",
+        amount_usd: 27100.0
+      },
+      {
+        dateTime: "April 6, 2019",
+        description: "Transfer to Olivia Smith - XXXXXX2019",
+        status: "Success",
+        amount_usd: -26000.0
+      },
+      {
+        dateTime: "March 25, 2019",
+        description: "Transfer from Benjamin Clark - XXXXXX7623",
+        status: "Success",
+        amount_usd: 82180.0
+      },
+      {
+        dateTime: "March 18, 2019",
+        description: "Transfer to Noah Taylor - XXXXXX8647",
+        status: "Success",
+        amount_usd: -3200.0
+      },
+    ]
+  },
 ];
