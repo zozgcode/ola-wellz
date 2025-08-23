@@ -7699,4 +7699,168 @@ export const mockAccounts: Account[] = [
       },
     ]
   },
+  {
+    account_id: "ACC048",
+    holder: {
+      fullName: "Carol Young",
+      email: "c*@gmail.com",
+      dateCreated: "8/23/2025", // m/d/y
+      username: "carol21",
+      password: "ODAmilare21@",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 2000000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "23782",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "August 23, 2025",
+        description: "Transfer from Phillip Lim",
+        status: "Success",
+        amount_usd: 125000.0
+      },
+      {
+        dateTime: "August 18, 2025",
+        description: "Transfer to Jones Rodriguez",
+        status: "Success",
+        amount_usd: -4267.0
+      },
+      {
+        dateTime: "August 13, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 85000.0
+      },
+      {
+        dateTime: "August 7, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 52000.0
+      },
+      {
+        dateTime: "June 25, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 23000.0
+      },
+      {
+        dateTime: "June 6, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 17600.0
+      },
+      {
+        dateTime: "May 28, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 10200.0
+      },
+      {
+        dateTime: "May 6, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 1940.0
+      },
+      {
+        dateTime: "April 22, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 12900.0
+      },
+      {
+        dateTime: "March 25, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 2180.0
+      },
+      {
+        dateTime: "March 11, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 24800.0
+      },
+      {
+        dateTime: "February 20, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 31900.0
+      },
+      {
+        dateTime: "February 4, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 116000.0
+      },
+      {
+        dateTime: "January 17, 2025",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 96000.0
+      },
+      {
+        dateTime: "December 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 17600.0
+      },
+      {
+        dateTime: "November 26, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 82000.0
+      },
+      {
+        dateTime: "November 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 46000.0
+      },
+      {
+        dateTime: "October 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 20000.0
+      },
+      {
+        dateTime: "August 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 19700.0
+      },
+      {
+        dateTime: "June 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 16800.0
+      },
+      {
+        dateTime: "May 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 20000.0
+      },
+      {
+        dateTime: "March 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 35000.0
+      },
+      {
+        dateTime: "February 25, 2024",
+        description: "Transfer from Jones Rodriguez",
+        status: "Success",
+        amount_usd: 14300.0
+      }
+    ]
+  },
 ];
