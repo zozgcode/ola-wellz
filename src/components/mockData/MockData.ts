@@ -15,12 +15,16 @@ export const mockAccounts: Account[] = [
     },
     bank_details: {
       account_type: "Checking",
-      balance_usd: 115678.0,
+      isAccountNumber: true,
+      balance_usd: 2000000.0,
     },
     transaction_mgs_code: {
       transaction_text_msg:
-        "To continue this transaction, Please enter the code sent to you",
-      transaction_code: "",
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "23782",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
       wireDate: true,
     },
     transaction_history: [
