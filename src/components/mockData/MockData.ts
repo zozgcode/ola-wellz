@@ -7867,4 +7867,336 @@ export const mockAccounts: Account[] = [
       }
     ]
   },
+  {
+    account_id: "ACC049",
+    holder: {
+      fullName: "Amita Holmes",
+      email: "a*@gmail.com",
+      dateCreated: "8/25/2025", // m/d/y
+      username: "HolmesDemery",
+      password: "Holmes11",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 3200000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "23782",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "December 12, 2008",
+        description: "Tractor and 2 Trucks - XXXXXX1763",
+        status: "Success",
+        amount_usd: 40000.0
+      },
+      {
+        dateTime: "November 24, 2008",
+        description: "Housing estate at Meadow Park Ln SW, Atlanta, GA - XXXXXX0876",
+        status: "Success",
+        amount_usd: 500000.0
+      },
+      {
+        dateTime: "October 10, 2008",
+        description: "Acres of land at Elim Church Road, Hinesville - XXXXXX2347",
+        status: "Success",
+        amount_usd: 15000.0
+      },
+      {
+        dateTime: "August 22, 2008",
+        description: "Transfer Fee - XXXXXX4779",
+        status: "Success",
+        amount_usd: -162.5
+      },
+      {
+        dateTime: "August 22, 2008",
+        description: "Transfer to Citybank - XXXXXX3456",
+        status: "Success",
+        amount_usd: -52000.0
+      },
+      {
+        dateTime: "November 14, 2007",
+        description: "Transfer from Ava Schmidt - XXXXXX1029",
+        status: "Success",
+        amount_usd: 23000.0
+      },
+      {
+        dateTime: "December 16, 2006",
+        description: "Transfer fee - XXXXXX4499",
+        status: "Success",
+        amount_usd: -92.0
+      },
+      {
+        dateTime: "December 16, 2006",
+        description: "Transfer to Liam Carter - XXXXXX5612",
+        status: "Success",
+        amount_usd: -48000.0
+      },
+      {
+        dateTime: "November 18, 2006",
+        description: "Transfer from Mason Lee - XXXXXX7890",
+        status: "Success",
+        amount_usd: 176000.0
+      },
+      {
+        dateTime: "October 20, 2006",
+        description: "Transfer from Mia Brooks - XXXXXX6111",
+        status: "Success",
+        amount_usd: 10200.0
+      },
+      {
+        dateTime: "December 1, 2005",
+        description: "VAT Fee - XXXXXX3345",
+        status: "Success",
+        amount_usd: -62.5
+      },
+      {
+        dateTime: "November 3, 2005",
+        description: "Transfer to Ava Wilson - XXXXXX2120",
+        status: "Success",
+        amount_usd: -37000.0
+      },
+      {
+        dateTime: "October 5, 2005",
+        description: "Transfer from Jacob Smith - XXXXXX9120",
+        status: "Success",
+        amount_usd: 19400.0
+      },
+      {
+        dateTime: "December 9, 2004",
+        description: "Transfer to Emma Johnson - XXXXXX1080",
+        status: "Success",
+        amount_usd: -39000.0
+      },
+      {
+        dateTime: "November 1, 2004",
+        description: "Transfer from Ethan Johnson - XXXXXX3491",
+        status: "Success",
+        amount_usd: 129000.0
+      },
+      {
+        dateTime: "October 6, 2004",
+        description: "Transfer fee - XXXXXX4110",
+        status: "Success",
+        amount_usd: -88.0
+      },
+      {
+        dateTime: "December 12, 2003",
+        description: "Transfer to Olivia Smith - XXXXXX2019",
+        status: "Success",
+        amount_usd: -26000.0
+      },
+      {
+        dateTime: "November 15, 2003",
+        description: "Transfer from Benjamin Clark - XXXXXX7623",
+        status: "Success",
+        amount_usd: 21800.0
+      },
+      {
+        dateTime: "October 10, 2003",
+        description: "Transfer to Noah Taylor - XXXXXX8647",
+        status: "Success",
+        amount_usd: -3200.0
+      },
+      {
+        dateTime: "December 20, 2002",
+        description: "Transfer from Amelia Müller - XXXXXX4730",
+        status: "Success",
+        amount_usd: 24800.0
+      },
+      {
+        dateTime: "November 8, 2002",
+        description: "Transfer fee - XXXXXX3563",
+        status: "Success",
+        amount_usd: -105.2
+      },
+      {
+        dateTime: "October 2, 2002",
+        description: "Transfer from Henry Baker - XXXXXX6667",
+        status: "Success",
+        amount_usd: 31900.0
+      },
+      {
+        dateTime: "December 1, 2001",
+        description: "Transfer to Ava Schmidt - XXXXXX9072",
+        status: "Success",
+        amount_usd: -14700.0
+      },
+      {
+        dateTime: "November 6, 2001",
+        description: "Transfer from Grace Evans - XXXXXX6366",
+        status: "Success",
+        amount_usd: 116000.0
+      },
+      {
+        dateTime: "October 11, 2001",
+        description: "Transfer to Julian Weber - XXXXXX3449",
+        status: "Success",
+        amount_usd: -25300.0
+      },
+      {
+        dateTime: "December 7, 2000",
+        description: "Transfer from Charlotte Green - XXXXXX4552",
+        status: "Success",
+        amount_usd: 96000.0
+      },
+      {
+        dateTime: "November 9, 2000",
+        description: "Transfer fee - XXXXXX7812",
+        status: "Success",
+        amount_usd: -52.0
+      },
+      {
+        dateTime: "November 9, 2000",
+        description: "Transfer to Jack Thompson - XXXXXX7298",
+        status: "Success",
+        amount_usd: -11800.0
+      },
+      {
+        dateTime: "October 2, 1999",
+        description: "Transfer fee - XXXXXX3001",
+        status: "Success",
+        amount_usd: -84.0
+      },
+      {
+        dateTime: "October 2, 1999",
+        description: "Transfer to Lena Schmidt - XXXXXX5571",
+        status: "Success",
+        amount_usd: -22200.0
+      },
+      {
+        dateTime: "December 5, 1998",
+        description: "Transfer from Anthony Fox - XXXXXX9921",
+        status: "Success",
+        amount_usd: 19800.0
+      },
+      {
+        dateTime: "November 1, 1998",
+        description: "Transfer to Clara Lee - XXXXXX4428",
+        status: "Success",
+        amount_usd: -14000.0
+      },
+      {
+        dateTime: "October 6, 1998",
+        description: "Transfer fee - XXXXXX3008",
+        status: "Success",
+        amount_usd: -75.0
+      },
+      {
+        dateTime: "December 18, 1997",
+        description: "Transfer from Samuel Brown - XXXXXX3740",
+        status: "Success",
+        amount_usd: 28750.0
+      },
+      {
+        dateTime: "November 9, 1997",
+        description: "Transfer fee - XXXXXX9011",
+        status: "Success",
+        amount_usd: -98.5
+      },
+      {
+        dateTime: "November 9, 1997",
+        description: "Transfer to Henry Bell - XXXXXX6659",
+        status: "Success",
+        amount_usd: -32000.0
+      },
+      {
+        dateTime: "December 15, 1996",
+        description: "Transfer from Anna Moore - XXXXXX1937",
+        status: "Success",
+        amount_usd: 11500.0
+      },
+      {
+        dateTime: "November 12, 1996",
+        description: "Transfer to Lucas White - XXXXXX3874",
+        status: "Success",
+        amount_usd: -8700.0
+      },
+      {
+        dateTime: "October 7, 1996",
+        description: "Transfer fee - XXXXXX4211",
+        status: "Success",
+        amount_usd: -61.0
+      },
+      {
+        dateTime: "December 6, 1995",
+        description: "Transfer from Olivia Kim - XXXXXX6338",
+        status: "Success",
+        amount_usd: 13200.0
+      },
+      {
+        dateTime: "November 8, 1995",
+        description: "Transfer to William Lee - XXXXXX8120",
+        status: "Success",
+        amount_usd: -16900.0
+      },
+      {
+        dateTime: "October 5, 1995",
+        description: "Fee - XXXXXX2199",
+        status: "Success",
+        amount_usd: -79.0
+      },
+      {
+        dateTime: "December 10, 1994",
+        description: "Transfer from Hannah Stone - XXXXXX5200",
+        status: "Success",
+        amount_usd: 8900.0
+      },
+      {
+        dateTime: "November 4, 1994",
+        description: "Transfer fee - XXXXXX8702",
+        status: "Success",
+        amount_usd: -68.0
+      },
+      {
+        dateTime: "November 4, 1994",
+        description: "Transfer to Ethan Brooks - XXXXXX9904",
+        status: "Success",
+        amount_usd: -14500.0
+      },
+      {
+        dateTime: "December 7, 1993",
+        description: "Transfer from Julia Davis - XXXXXX7321",
+        status: "Success",
+        amount_usd: 21400.0
+      },
+      {
+        dateTime: "November 2, 1993",
+        description: "Transfer fee - XXXXXX4889",
+        status: "Success",
+        amount_usd: -91.0
+      },
+      {
+        dateTime: "November 2, 1993",
+        description: "Transfer to Marcus Green - XXXXXX6050",
+        status: "Success",
+        amount_usd: -11000.0
+      },
+      {
+        dateTime: "December 3, 1992",
+        description: "Transfer from Natalie Hughes - XXXXXX3417",
+        status: "Success",
+        amount_usd: 16700.0
+      },
+      {
+        dateTime: "October 5, 1992",
+        description: "Transfer fee - XXXXXX1104",
+        status: "Success",
+        amount_usd: -84.0
+      },
+      {
+        dateTime: "October 5, 1992",
+        description: "Transfer to Owen Baker - XXXXXX7891",
+        status: "Success",
+        amount_usd: -12300.0
+      },
+    ]
+  },
 ];
