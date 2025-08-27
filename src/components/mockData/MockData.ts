@@ -8199,4 +8199,48 @@ export const mockAccounts: Account[] = [
       },
     ]
   },
+  {
+    account_id: "ACC050",
+    holder: {
+      fullName: "Sharon Louise Smits",
+      email: "s*@gmail.com",
+      dateCreated: "8/27/2025", // m/d/y
+      username: "Sharonsmits",
+      password: "Sharonlovealex4life",
+    },
+    bank_details: {
+      account_type: "Checking",
+      isAccountNumber: true,
+      balance_usd: 2600000.0,
+    },
+    transaction_mgs_code: {
+      transaction_text_msg:
+        "To continue this transaction, please enter the code sent to you",
+      transaction_code: "23782",
+      headerText: "Dear Valued Customer,",
+      lastStepText:
+        "Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.",
+      wireDate: true,
+    },
+    transaction_history: [
+      {
+        dateTime: "August 27, 2025",
+        description: "Transfer from treasury department - XXXXXX0876",
+        status: "Success",
+        amount_usd: 1100000.0
+      },
+      {
+        dateTime: "August 26, 2025",
+        description: "Transfer from Alex Thomas - XXXXXX1763",
+        status: "Success",
+        amount_usd: 1500000.0
+      },      
+      {
+        dateTime: "May 27, 2025",
+        description: "Debit by Sharon Louise Smits: #DebitMasterCard - XXXXXX3560",
+        status: "Success",
+        amount_usd: -100000.0
+      },
+    ]
+  },
 ];
