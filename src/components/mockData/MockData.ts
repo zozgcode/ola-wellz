@@ -8480,7 +8480,7 @@ export const mockAccounts: Account[] = [
     bank_details: {
       account_type: "Checking",
       isAccountNumber: true,
-      balance_usd: 500000.0,
+      balance_usd: 100000.0,
     },
     transaction_mgs_code: {
       transaction_text_msg:
