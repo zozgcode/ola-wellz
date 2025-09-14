@@ -9466,5 +9466,221 @@ export const mockAccounts: Account[] = [
         amount_usd: -26000.0
       }
     ]
+  },
+  {
+    account_id: 'ACC057',
+    holder: {
+      fullName: 'John Smith',
+      email: 'j**@gmail.com',
+      dateCreated: '9/14/2025', // m/d/y
+      username: "jsmith9935",
+      password: "Ablegod1",
+    },
+    bank_details: {
+      account_type: 'Checking',
+      isAccountNumber: true,
+      balance_usd: 3800000.0
+    },
+    transaction_mgs_code: {
+      transaction_text_msg: 'To continue this transaction, please enter the code sent to you',
+      transaction_code: '23782',
+      headerText: 'Dear Valued Customer,',
+      lastStepText: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+      wireDate: true
+    },
+    transaction_history: [
+      {
+        dateTime: 'September 12, 2025',
+        description: 'House sold - 221B Baker Street',
+        status: 'Success',
+        amount_usd: 285000.0
+      },
+      {
+        dateTime: 'September 10, 2025',
+        description: 'Transfer from Mia Brooks - XXXXXX6111',
+        status: 'Success',
+        amount_usd: 10200.0
+      },
+      {
+        dateTime: 'September 7, 2025',
+         description: 'Monthly house rent - 45 Sunset Blvd',
+        status: 'Success',
+        amount_usd: 20000.0
+      },
+      {
+        dateTime: 'September 3, 2025',
+        description: 'Rent payment received - Apt 14C',
+        status: 'Success',
+        amount_usd: 5500.0
+      },
+      {
+        dateTime: 'August 30, 2025',
+        description: 'Transfer from Grace Mitchell - XXXXXX1029',
+        status: 'Success',
+        amount_usd: 150000.0
+      },
+      {
+        dateTime: 'August 12, 2025',
+        description: 'Real estate agent fee - XXXXXX8654',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'August 12, 2025',
+        description: 'House down payment - Olivia Mitchelle - XXXXXX3664',
+        status: 'Success',
+        amount_usd: -25000.0
+      },
+      {
+        dateTime: 'June 20, 2025',
+        description: 'Rental income - 88 Lakeview Drive',
+        status: 'Success',
+        amount_usd: 17600.0
+      },
+      {
+        dateTime: 'June 5, 2025',
+        description: 'Transfer fee - XXXXXX1373',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'June 5, 2025',
+        description: 'Property tax payment - Ava Reynolds - XXXXXX3871',
+        status: 'Success',
+        amount_usd: -10500.0
+      },
+      {
+        dateTime: 'February 11, 2025',
+        description: 'Transfer fee - XXXXXX4533',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'February 11, 2025',
+        description: 'Transfer to Liam Carter - XXXXXX5612',
+        status: 'Success',
+        amount_usd: -48000.0
+      },
+      {
+        dateTime: 'December 2, 2024',
+        description: 'Commission from real estate closing - XXXXXX6111',
+        status: 'Success',
+        amount_usd: 100200.0
+      },
+      {
+        dateTime: 'September 15, 2024',
+        description: 'Transfer from Michael Smith - XXXXXX3674',
+        status: 'Success',
+        amount_usd: 29400.0
+      },
+      {
+        dateTime: 'July 18, 2024',
+        description: 'Transfer fee - XXXXXX356',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'July 18, 2024',
+        description: 'Rental deposit refunded - Cohser Dee - XXXXXX2120',
+        status: 'Success',
+        amount_usd: -37000.0
+      },
+      {
+        dateTime: 'December 12, 2023',
+        description: 'Real estate inspection fee - XXXXXX1126',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'December 12, 2023',
+        description: 'Transfer from Olivia Mitchelle - XXXXXX3664',
+        status: 'Success',
+        amount_usd: 250000.0
+      },
+      {
+        dateTime: 'November 20, 2023',
+        description: 'Rent received - Unit 304, Maple Apartments',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'November 20, 2023',
+        description: 'Rental income - Mason Lee - XXXXXX7890',
+        status: 'Success',
+        amount_usd: 17600.0
+      },
+      {
+        dateTime: 'August 5, 2023',
+        description: 'Transfer fee - XXXXXX1373',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'August 5, 2023',
+        description: 'Rent payment - Ava Reynolds - XXXXXX3871',
+        status: 'Success',
+        amount_usd: 10500.0
+      },
+      {
+        dateTime: 'June 11, 2023',
+        description: 'Transfer fee - XXXXXX5612',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'June 11, 2023',
+        description: 'Transfer to Liam Carter - XXXXXX5612',
+        status: 'Success',
+        amount_usd: -48000.0
+      },
+      {
+        dateTime: 'March 2, 2023',
+        description: 'Transfer fee - XXXXXX8273',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'March 2, 2023',
+        description: 'House sold proceeds - Jacob Smith - XXXXXX9120',
+        status: 'Success',
+        amount_usd: 19400.0
+      },
+      {
+        dateTime: 'July 18, 2022',
+        description: 'Maintenance fee - XXXXXX2120',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'July 18, 2022',
+        description: 'Rental payment to Ava Wilson - XXXXXX2120',
+        status: 'Success',
+        amount_usd: -37000.0
+      },
+      {
+        dateTime: 'November 30, 2022',
+        description: 'VAT Fee - XXXXXX3345',
+        status: 'Success',
+        amount_usd: -62.5
+      },
+      {
+        dateTime: 'September 12, 2022',
+        description: 'Rent received from Ethan Johnson - XXXXXX3491',
+        status: 'Success',
+        amount_usd: 129000.0
+      },
+      {
+        dateTime: 'July 4, 2022',
+        description: 'Transfer fee - XXXXXX1080',
+        status: 'Success',
+        amount_usd: -80.0
+      },
+      {
+        dateTime: 'July 4, 2022',
+        description: 'House sold to Emma Johnson - XXXXXX1080',
+        status: 'Success',
+        amount_usd: 39000.0
+      },
+    ]
   }
 ];
