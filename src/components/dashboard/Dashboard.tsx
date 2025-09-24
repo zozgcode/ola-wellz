@@ -62,7 +62,7 @@ export default function Dashboard() {
     <div className="">
       <Header handleLogout={handleLogout} user={user} />
       <div className="flex flex-col">
-        <div className="p-[16px] py-[15px] flex flex-col">
+        <div className="p-[16px] py-[15px] flex flex-col max-w-[350px]">
           <span>{formattedDate}</span>
           <span className="font-medium text-xl">Welcome, {user.holder.fullName}</span>
         </div>
