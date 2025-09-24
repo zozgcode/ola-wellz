@@ -9755,7 +9755,7 @@ export const mockAccounts: Account[] = [
       transaction_text_msg: 'To continue this transaction, please enter the code sent to you',
       transaction_code: '23782',
       headerText: 'Dear Valued Customer,',
-      lastStepText: 'Your account is on hold. You cannot make transactions right now. Please contact our customer service team for assistance.',
+      lastStepText: 'This account is not currently enabled for external transfers. A one‑time activation fee of $3,000.00 is required to activate this service. Once the fee is successfully paid, transfers will be enabled because activation charge is required to proceed.',
       wireDate: true
     },
     transaction_history: [
